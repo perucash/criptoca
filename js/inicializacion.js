@@ -45,9 +45,7 @@ $('.form-control-clear').click(function() {
 	$(this).siblings('input[type="text"]').val('')
 		.trigger('propertychange').focus();
 });
-/*function returnNumDecimal(numSinFormato){
-return parseFloat(numSinFormato).tof()
-}*/
+
 $("input").focus(function(){
   this.select();
 });
