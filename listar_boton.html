@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Menu Simple Corredizo</title>
+
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="css/sidebarDeslizable.css?version=1.0.5" rel="stylesheet">
+		<link rel="stylesheet" href="css/cssBarraTop.css?version=1.0.3">
+		<link href="css/estilosElementosv3.css?version=3.0" rel="stylesheet">
+		<link rel="stylesheet" href="css/colorsmaterial.css">
+		<link rel="stylesheet" href="css/icofont.css"> <!-- iconos extraidos de: http://icofont.com/-->
+		<link rel="shortcut icon" href="images/peto.png" />
+		<link rel="stylesheet" href="css/estilostop.css?version=1.0.1">
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    	<!-- <link rel="stylesheet" href="css/estilosp.css?version=1.0"> -->
+   	 	<!-- <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> -->
+   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   		<script src='https://www.google.com/recaptcha/api.js'></script>
+    	<link rel="stylesheet" href="css/estiloscampaña.css?version=1.0">
+    	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+
+<body>
+	<style type="text/css">
+    .panel-default.panel-heading { border-color:transparent!important; }
+    .panel-heading {    border-top-left-radius: 17px;
+                border-top-right-radius: 17px;
+}
+    .panel   {border-radius: 8px;}
+    .panel-panel.default {padding-left: 0px;}
+    .navbar {min-height: 90px;}
+  
+
+  </style>
+
+<div id="wrapper">
+
+	<!-- Sidebar -->
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+			
+			<div class="logoEmpresa ocultar-mostrar-menu">
+				<img class="img-responsive" src="images/empresa.png?version=1.1" alt="">
+			</div>
+			<li >
+					<a href="#!"><i class="icofont icofont-home"></i> Dashboard</a>
+
+			</li>
+			<li>
+					<a href="#!"><i class="icofont icofont-cube"></i> Metodos de pago</a>
+						<ul>
+							<LI><a href="#!"><i class="icofont icofont-home"></i> Crear botones</a></LI>
+
+							<LI class="active"><a href="#!"><i class="icofont icofont-home"></i> Listar botones</a></LI>
+						</ul>
+			</li>
+			<li>
+					<a href="#"><i class="icofont icofont-shopping-cart"></i> Depositos</a>
+						<ul>
+							<li><a href="#"><i class="icofont icofont-home"></i> Ver transacciones</a></li>
+							<LI><a href="#!"><i class="icofont icofont-home"></i> Solicitar pagos</a></LI>
+							<LI><a href="#!"><i class="icofont icofont-home"></i> Reportes de pagos pago</a></LI>
+
+						</ul>
+			</li>
+			<li>
+					<a href="#!"><i class="icofont icofont-users"></i> Configuraciones</a>
+						<ul>
+							<LI><a href="#!"><i class="icofont icofont-home"></i> Datos del contacto</a></LI>
+							<LI><a href="#!"><i class="icofont icofont-home"></i> Datos del comercio</a></LI>
+							
+
+						</ul>
+			</li>
+			<li>
+					<a href="#!" class="ocultar-mostrar-menu"><i class="icofont icofont-swoosh-left"></i> Ocultar menú</a>
+			</li>
+		</ul>
+	</div>
+			<!-- /#sidebar-wrapper -->
+<div class="navbar-wrapper">
+	<div class="container-fluid">
+		<nav class="navbar navbar-fixed-top encoger">
+			<div class="container">
+				<div class="navbar-header" style="padding-top: 15px; padding-left: 3px;">
+				<a class="navbar-brand ocultar-mostrar-menu" href="#"><img id="imgLogoInfocat" class="img-responsive" src="images/cripto.png" alt=""></a>
+					<button type="button" class="navbar-toggle collapsed" id="btnColapsador" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse ">
+					<ul class="nav navbar-nav">
+						<li class="hidden down"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HR <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+										<li><a href="#">Change Time Entry</a></li>
+										<li><a href="#">Report</a></li>
+								</ul>
+							</li>
+					</ul>
+					<ul class="nav navbar-nav pull-right">
+						 <li>
+							<div class="btn-group has-clear hidden"><label for="txtBuscarNivelGod" class="text-muted visible-xs">Buscar algo:</label>
+								<input type="text" class="form-control" id="txtBuscarNivelGod" placeholder="&#xeded;">
+								<span class="form-control-clear glyphicon glyphicon-remove-circle form-control-feedback hidden"></span>
+							</div>
+						 </li>
+						 <li id="liDatosPersonales" style="font-family: 'Poppins', sans-serif;">
+						 	<div class="dropdown">
+						 		<!-- <style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 220px;
+    box-shadow: 0px 3px 13px -1px rgba(0,0,0,0.45);
+    z-index: 1;
+    border-radius: 5px;
+    
+
+}
+
+.dropdown-content a {
+    color: #4d8ddc;
+    padding: 2px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {background-color: #212529; color: white;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+    
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+
+}
+
+a:focus, a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+</style> -->
+								  <a href="#!" style="padding-top: 12px;"><p style="height: 35px";> <span id="icoUser"><i class="icofont icofont-ui-user"></i></span><span class="mayuscula" id="menuNombreUsuario">Pariona Valencia, Carlos Alex</span></p></a>
+								  <div class="dropdown-content">
+								    <a href="#" class="elemento"><span><i class="glyphicon glyphicon-user" id="icono"></i></span>Perfil</a>
+								    <a href="#" class="elemento"><span><i class="glyphicon glyphicon-tag" id="icono"></i></span>Notificaciones</a>
+								    <a href="#" class="elemento"><span><i class="glyphicon glyphicon-cog" id="icono"></i></span>Configuración</a>
+								    <hr style=" margin-top: 5px; margin-bottom: 5px;">
+								    <a href="php/desconectar.php" class="elemento"><span><i class="glyphicon glyphicon-off" id="icono"></i></span>Cerrar Sesión</a>
+								  </div>
+								</div>
+						 </li>
+							
+		
+					
+						
+				</div>
+		</div>
+		</nav>
+	</div>
+</div>
+<!-- Page Content -->
+<div id="page-content-wrapper">
+	<div class="container-fluid">				 
+			<div class="row">
+				  <div id="cuerpo"> 
+    <div class="container" id="divmedio">
+        <div class="row centered-form" >
+        <div class="col-xs-12 col-sm-12 col-md-12 col-sm-offset-0 col-md-offset-0 ">
+          <div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05);padding: 20px;">
+              <div class="panel-heading" style="background:#fff; padding-top: 20px"">
+                <h3 id="title" class="panel-title text-left" style="font-size:30px ; padding-top: 5px; color: #808080; padding-bottom: 18px;";>Listar Botones</h3>
+               </div>
+               <!-- <div class="container"> -->
+              <table id="mytable" class="table table-bordred table-hover">
+                   
+                   <thead>
+                   
+                   <th>Producto</th>
+                   <th>Codigo Producto</th>
+                   <th>Precio</th>
+                   <th>ShortCode</th>
+                   <th>Salida</th>
+                   <th>Editar</th>
+                   <th>Eliminar</th>
+                   </thead>
+					    <tbody>
+					    
+					    <tr>
+					    <td>Mohsin</td>
+					    <td>Irshad</td>
+					    <td>S/. 90</td>
+					    <td>isometric.mohsin@gmail.com</td>
+					    <td>9</td>
+					    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-azul btn-outline btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+					    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-rojo btn-outline btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+					    </tr>
+					    
+					 <tr>
+					    <td>Mohsin</td>
+					    <td>Irshad</td>
+					    <td>S/. 90</td>
+					    <td>isometric.mohsin@gmail.com</td>
+					    <td>5</td>
+					    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-azul btn-outline btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+					    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-rojo btn-outline btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+					    </tr>
+					    
+					    
+					 <tr>
+					    <td>Mohsin</td>
+					    <td>Irshad</td>
+					    <td>S/. 90</td>
+					    <td>isometric.mohsin@gmail.com</td>
+					    <td>6</td>
+					    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-azul btn-outline btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+					    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-rojo btn-outline btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+					    </tr>
+					    
+					    
+					    
+					 <tr>
+					    <td>Mohsin</td>
+					    <td>Irshad</td>
+					    <td>S/. 90</td>
+					    <td>isometric.mohsin@gmail.com</td>
+					    <td>5</td>
+					    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-azul btn-outline btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+					    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-rojo btn-outline btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+					    </tr>
+					    
+					    
+					 <tr>
+					    <td>Mohsin</td>
+					    <td>Irshad</td>
+					    <td>S/. 90</td>
+					    <td>isometric.mohsin@gmail.com</td>
+					    <td>7</td>
+					    <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-azul btn-outline btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil"></span></button></p></td>
+					    <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-rojo btn-outline btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash"></span></button></p></td>
+					    </tr>
+					    </tbody>
+				</table>  
+				    <div class="text-right" style="padding: 15px";> 
+				      <button  class="btn btn-azul btn-outline" id="btnayudalista">Ayuda</button>
+				    </div>
+                </div>
+          </div>
+          </div>
+        </div>
+        </div>
+	</div>
+</div>
+<!-- /#page-content-wrapper -->
+</div><!-- /#wrapper -->
+
+<!-- Modal para decir Bienvenido  -->
+<div class="modal fade modal-Bienvenido" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+<div class="modal-dialog modal-sm" role="document">
+	<div class="modal-content">
+		<div class="modal-header-success">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel"><i class="icofont icofont-help-robot"></i> Saludos</h4>
+		</div>
+		<div class="modal-body">
+			<div class="container-fluid">
+			<div class="row">
+			<p><strong>Bienvenido!</strong> Gracias por usar el panel deslizable</p>
+			</div>
+		</div>
+        </div>
+			
+		<div class="modal-footer">
+			<button class="btn btn-success btn-outline" data-dismiss="modal" ><i class="icofont icofont-social-meetme"></i> Aceptar</button>
+		</div>
+	</div>
+	</div>
+</div>
+</div>
+
+	
+<!-- jQuery -->
+<script src="js/jquery-2.2.4.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/inicializacion.js?version=1.0.1"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+
+$(document).ready(function(){
+});
+$('#btnBienvenido').click(function () {
+	$('.modal-Bienvenido').modal('show');
+});
+</script>
+  <script type="text/javascript">
+	$("#btnayudalista").click(function () {
+		console.log("click en el btnayudalista");
+		window.location.href="index.html"
+	});
+  </script>
+</body>
+
+</html>
