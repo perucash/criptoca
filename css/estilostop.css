@@ -46,6 +46,7 @@
 }
 
 a:focus, a:hover {
-    color: #ffffff;
-    text-decoration: none;
+    color: #ffffff!important;
+    
 }
+a:focus, a:hover {text-decoration: none; }
