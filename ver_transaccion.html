@@ -9,7 +9,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 
-		<title>Menu Simple Corredizo</title>
+		<title>Ver Transaccion</title>
 
 		<!-- Bootstrap Core CSS -->
 		<link href="css/bootstrap.css" rel="stylesheet">
@@ -20,14 +20,16 @@
 		<link href="css/estilosElementosv3.css?version=3.0" rel="stylesheet">
 		<link rel="stylesheet" href="css/colorsmaterial.css">
 		<link rel="stylesheet" href="css/icofont.css"> <!-- iconos extraidos de: http://icofont.com/-->
-		<link rel="shortcut icon" href="images/peto.png" />
+		<link rel="shortcut icon" href="images/icono_prueba1.png" />
+		<link rel="stylesheet" href="css/estilostop.css?version=1.0.1">
 		
 		<link rel="stylesheet" href="css/bootstrap.min.css">
     	<!-- <link rel="stylesheet" href="css/estilosp.css?version=1.0"> -->
-   	 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+   	 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
    		<script src='https://www.google.com/recaptcha/api.js'></script>
-    	<link rel="stylesheet" href="css/estiloscampaña.css?version=1.0">
+    	<link rel="stylesheet" href="css/estiloscampana.css?version=1.0">
+    	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 
 <body>
@@ -36,12 +38,15 @@
     .panel-heading {    border-top-left-radius: 17px;
                 border-top-right-radius: 17px;
 }
-    .panel   {border-radius: 17px;}
+    .panel   {border-radius: 8px;}
+    .navbar {min-height: 90px;}
     .panel-panel.default {padding-left: 0px;}
+    a:focus, a:hover {text-decoration: none; }
+    .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{padding: 15px;}
 
   </style>
 
-<div id="wrapper">
+<div id="wrapper" class="noselect">
 
 	<!-- Sidebar -->
 	<div id="sidebar-wrapper">
@@ -90,8 +95,8 @@
 	<div class="container-fluid">
 		<nav class="navbar navbar-fixed-top encoger">
 			<div class="container">
-				<div class="navbar-header ">
-				<a class="navbar-brand ocultar-mostrar-menu" href="#"><img id="imgLogoInfocat" class="img-responsive" src="images/logo.png" alt=""></a>
+				<div class="navbar-header" style="padding-top: 15px; padding-left: 3px;">
+				<a class="navbar-brand ocultar-mostrar-menu" href="#"><img id="imgLogoInfocat" class="img-responsive" src="images/cripto.png" alt=""></a>
 					<button type="button" class="navbar-toggle collapsed" id="btnColapsador" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -115,9 +120,17 @@
 								<span class="form-control-clear glyphicon glyphicon-remove-circle form-control-feedback hidden"></span>
 							</div>
 						 </li>
-						 <li id="liDatosPersonales"><a href="#!" style="padding-top: 12px;"><p> <span id="icoUser"><i class="icofont icofont-ui-user"></i></span><span class="mayuscula" id="menuNombreUsuario">Pariona Valencia, Carlos Alex</span></p></a></li>
-							
-		<li class="text-center"><a href="php/desconectar.php"><span class="visible-xs">Cerrar Sesión</span><i class="icofont icofont-ui-power"></i></a></li>
+						 <li id="liDatosPersonales" style="font-family: 'Poppins', sans-serif;">
+						 		<div class="dropdown">
+						 		  <a href="#!" style="padding-top: 12px;"><p style="height: 35px";> <span id="icoUser"><i class="icofont icofont-ui-user"></i></span><span class="mayuscula" id="menuNombreUsuario">Pariona Valencia, Carlos Alex</span></p></a>
+								  <div class="dropdown-content">
+								    <a href="#" class="elemento"><span><i class="glyphicon glyphicon-user" id="icono"></i></span>Perfil</a>
+								    <a href="#" class="elemento"><span><i class="glyphicon glyphicon-tag" id="icono"></i></span>Notificaciones</a>
+								    <a href="#" class="elemento"><span><i class="glyphicon glyphicon-cog" id="icono"></i></span>Configuración</a>
+								    <hr style=" margin-top: 5px; margin-bottom: 5px;">
+								    <a href="php/desconectar.php" class="elemento"><span><i class="glyphicon glyphicon-off" id="icono"></i></span>Cerrar Sesión</a>
+								  </div>
+								</div>
 					</ul>
 						
 				</div>
@@ -126,16 +139,16 @@
 	</div>
 </div>
 <!-- Page Content -->
-<div id="page-content-wrapper">
+<div id="page-content-wrapper" >
 	<div class="container-fluid">				 
 			<div class="row">
 				  <div id="cuerpo"> 
     <div class="container" id="divmedio">
         <div class="row centered-form" >
         <div class="col-xs-12 col-sm-12 col-md-12 col-sm-offset-0 col-md-offset-0 ">
-          <div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05); height: 33em; width: 80em;">
-              <div class="panel-heading" style="background:#fff; padding-top: 50px"">
-                <h3 id="title" class="panel-title text-left" style="font-size:38px ; padding-top: 5px; color: #808080; padding-bottom: 18px;";>Ver Transacciones</h3>
+          <div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05); padding: 20px;">
+              <div class="panel-heading" style="background:#fff; padding-top: 20px"">
+                <h3 id="title" class="panel-title text-left" style="font-size:30px ; padding-top: 5px; color: #808080; padding-bottom: 18px;";>Ver Transacciones</h3>
                </div>
                <table id="mytable" class="table table-bordred table-hover">
                    
@@ -192,8 +205,8 @@
 					    </tr>
 					</tbody>
 				</table>  
-				    <div class="text-right" style="padding-right: 15px; padding-top:35px;"> 
-				      <button class="btn btn-primary" id="btnayuda">Ayuda</button>
+				    <div class="text-right" style="padding: 15px"> 
+				      <button class="btn btn-azul btn-outline" id="btnayuda">Ayuda <i class="fa fa-question" aria-hidden="true"></i></button>
 				    </div>
                 </div>
           </div>

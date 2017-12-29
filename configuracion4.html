@@ -20,7 +20,7 @@
 		<link href="css/estilosElementosv3.css?version=3.0" rel="stylesheet">
 		<link rel="stylesheet" href="css/colorsmaterial.css">
 		<link rel="stylesheet" href="css/icofont.css"> <!-- iconos extraidos de: http://icofont.com/-->
-		<link rel="shortcut icon" href="images/peto.png" />
+		<link rel="shortcut icon" href="images/icono_prueba1.png" />
 		
 		<link rel="stylesheet" href="css/bootstrap.min.css">
    	 	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -28,6 +28,7 @@
    		<script src='https://www.google.com/recaptcha/api.js'></script>
     	<link rel="stylesheet" href="css/estiloscampana.css?version=1.0">
     	<link rel="stylesheet" href="css/estilostop.css?version=1.0.1">
+    	<link rel="stylesheet" href="css/font-awesome.min.css">
     	
 </head>
 
@@ -154,7 +155,7 @@
         <div class="row centered-form" >
         <div class="col-xs-12 col-sm-12 col-md-12 col-sm-offset-0 col-md-offset-0 ">
           <div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05); padding: 20px;">
-              <div class="panel-heading" style="background:#fff; padding-top: 30px">
+              <div class="panel-heading" style="background:#fff; padding-top: 15px">
                 <label id="title" class="panel-title text-left" style="color: #808080; padding-bottom: 18px;""><h2>Confirguración</h2></label>
                </div> 
      		<div class="container">
@@ -166,31 +167,31 @@
 						        <form class="form-horizontal" role="form">
 						          <div class="form-group">
 						            <label class="col-lg-3 control-label">Nombre:</label>
-						            <div class="col-lg-8">
+						            <div class="col-lg-8 col-sm-11">
 						              <input class="form-control" id="txtnombre" type="text" placeholder="Ingresa Nombre">
 						            </div>
 						          </div>
 						          <div class="form-group">
 						            <label class="col-lg-3 control-label">Apellidos:</label>
-						            <div class="col-lg-8">
+						            <div class="col-lg-8 col-sm-11">
 						              <input class="form-control" id="txtapellidos" type="text" placeholder="Ingresa Apellidos">
 						            </div>
 						          </div>
 						          <div class="form-group">
-						            <label class="col-lg-3 control-label">DNI:</label>
-						            <div class="col-lg-8">
+						            <label class="col-lg-3 col-sm-2 control-label">DNI:</label>
+						            <div class="col-lg-8 col-sm-11">
 						              <input class="form-control" id="txtdni" type="text" placeholder="Ingresa DNI">
 						            </div>
 						          </div>
 						          <div class="form-group">
 						            <label class="col-lg-3 control-label">Email:</label>
-						            <div class="col-lg-8">
+						            <div class="col-lg-8 col-sm-11">
 						              <input class="form-control" id="txtcorreo" type="text" placeholder="Ingresa Correo">
 						            </div>
 						          </div>
 						          <div class="form-group">
-						            <label class="col-lg-3 control-label">Pais:</label>
-						            <div class="col-lg-8">
+						            <label class="col-lg-3 col-sm-2 control-label">Pais:</label>
+						            <div class="col-lg-8 col-sm-11">
 						              <div class="ui-select">
 						                <select id="cmbPais" class="form-control">
 						                  <option value="Peru" selected="selected">Perú</option>
@@ -209,7 +210,7 @@
 						          </div>
 						            <div class="form-group">
 						            <label class="col-lg-3 control-label">Ciudad:</label>
-						            <div class="col-lg-8">
+						            <div class="col-lg-8 col-sm-11">
 						              <div class="ui-select">
 						                <select id="cmbCiudad" class="form-control">
 						                  <option value="Arequipa">Arequipa</option>
@@ -226,33 +227,33 @@
 						          </div>
 						          <div class="form-group">
 						            <label class="col-lg-3 control-label">Dirección:</label>
-						            <div class="col-md-8">
+						            <div class="col-md-8 col-sm-11">
 						              <input class="form-control" id="txtdireccion" type="text">
 						            </div>
 						          </div>
 						          <div class="form-group">
 						            <label class="col-lg-3 control-label">Telefono:</label>
-						            <div class="col-md-8">
+						            <div class="col-md-8 col-sm-11">
 						              <input class="form-control" id="txttelefono" type="password">
 						            </div>
 						          </div>						         
 						          <div class="form-group">
 						            <label class="col-lg-3 control-label">Contraseña:</label>
-						            <div class="col-lg-8">
+						            <div class="col-lg-8 col-sm-11">
 						              <input class="form-control" id="txtcontraseña" type="password" placeholder="Ingresa Contraseña">
 						            </div>
 						          </div>
 						          <div class="form-group">
 						            <label class="col-lg-3 control-label">Repita Contraseña:</label>
-						            <div class="col-lg-8">
+						            <div class="col-lg-8 col-sm-11">
 						              <input class="form-control" id="txtrepitacontraseña" type="password" placeholder="Repita Contraseña">
 						            </div>
 						          </div>
 						           <div class="form-group">
 						            <label class="col-md-3 control-label"></label>
-						            <div class="col-md-offset-9">
-						              <button id="btnguardarcontacto" class="btn btn-azul btn-outline">Guardar</button>
-						              <button id="btncancelarcontacto" class="btn btn-dark btn-outline">Cancelar</button>
+						            <div class="col-md-offset-9 col-sm-offset-7">
+						              <button id="btnguardarcontacto" class="btn btn-azul btn-outline"><i class="fa fa-check" aria-hidden="true"></i> Guardar</button>
+						              <button id="btncancelarcontacto" class="btn btn-dark btn-outline"><i class="fa fa-times" aria-hidden="true"></i> Cancelar</button>
 						            </div>
 						          </div>
 						        </form>
@@ -269,19 +270,19 @@
 						        <form class="form-horizontal" role="form">
 						          <div class="form-group">
 						            <label class="col-lg-3 control-label">Nombre del titular:</label>
-						            <div class="col-lg-8">
+						            <div class="col-lg-8 col-sm-11">
 						              <input class="form-control" id="txtnombretitular" type="text" placeholder="Ingresa Nombre">
 						            </div>
 						          </div>
 						          <div class="form-group">
 						            <label class="col-lg-3 control-label">Nombre de cuenta bancaria:</label>
-						            <div class="col-lg-8">
+						            <div class="col-lg-8 col-sm-11">
 						              <input class="form-control" id="txtcuentabancaria" type="text" placeholder="Ingresa Cuenta">
 						            </div>
 						          </div>
 						          <div class="form-group">
 						            <label class="col-lg-3 control-label">Banco:</label>
-						            <div class="col-lg-8">
+						            <div class="col-lg-8 col-sm-11">
 						              <div class="ui-select">
 						                <select id="cmbBanco" class="form-control">
 						                  <option value="Interbank" selected="selected">Interbank</option>
@@ -294,9 +295,10 @@
 						          </div>
 						          <div class="form-group">
 						            <label class="col-md-3 control-label"></label>
-						            <div class="col-md-offset-9">
-						              <button id="btnguardartarjeta" class="btn btn-azul btn-outline">Guardar</button>
-						              <button id="btncancelartarjeta" class="btn btn-dark btn-outline">Cancelar</buutton>
+						            <div class="col-md-offset-9 col-sm-offset-7">
+
+						              <button id="btnguardartarjeta" class="btn btn-azul btn-outline"><i class="fa fa-check" aria-hidden="true"></i> Guardar</button>
+						              <button id="btncancelartarjeta" class="btn btn-dark btn-outline"><i class="fa fa-times" aria-hidden="true"></i> Cancelar</buutton>
 						            </div>
 						          </div>
 						        </form>
@@ -313,15 +315,15 @@
 						        <form class="form-horizontal" role="form">
 						          <div class="form-group">
 						            <label class="col-lg-3 control-label">Dirección Bitcoin:</label>
-						            <div class="col-lg-8">
+						            <div class="col-lg-8 col-sm-11">
 						              <input class="form-control" id="txtbicoin" type="text" placeholder="Ingresa Nombre">
 						            </div>
 						          </div>
 						          <div class="form-group">
 						            <label class="col-md-3 control-label"></label>
-						            <div class="col-md-offset-9">
-						              <button id="btnguardarbitcoin" class="btn btn-azul btn-outline">Guardar</button>
-						              <button id="btncancelarbitcoin" class="btn btn-dark btn-outline">Cancelar</button>
+						            <div class="col-md-offset-9 col-sm-offset-7">
+						              <button id="btnguardarbitcoin" class="btn btn-azul btn-outline"><i class="fa fa-check" aria-hidden="true"></i> Guardar</button>
+						              <button id="btncancelarbitcoin" class="btn btn-dark btn-outline"><i class="fa fa-times" aria-hidden="true"></i> Cancelar</button>
 						            </div>
 						          </div>
 						        </form>
