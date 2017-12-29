@@ -5,5 +5,5 @@ $letras=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R'
 for ($i=0; $i <10 ; $i++) { 	
 	$licencia=$licencia. $letras[rand(0, count($letras)-1)];
 }
-echo $licencia;
+//echo $licencia;
 ?>

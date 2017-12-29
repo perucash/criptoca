@@ -81,7 +81,7 @@
 								<input type="submit" id="btncontinuar" style="height: 45px; width:80%; margin:0 auto; " value="Continuar" class="btn btn-primary btn-block col-md-offset-1">
 
 								<div style="padding-top: 30px;">
-									<h5 class="text-center">¿Ya posee una cuenta? <a href="">Inicie sesión aquí</a></h5>
+									<h5 class="text-center">¿Ya posee una cuenta? <a href="login.html">Inicie sesión aquí</a></h5>
 								</div>
 							</div>
 						</div>
@@ -99,7 +99,7 @@ $(document).ready(function () {
 });
 $("#btncontinuar").click(function () {
 	console.log("click en el btn");
-	window.location.href="index.html"
+	window.location.href="confirmar.html"
 });
 </script>
 </body>
