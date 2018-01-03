@@ -4,10 +4,12 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/estilosp.css?version=1.0.1">
-		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 		<script src='https://www.google.com/recaptcha/api.js'></script>
-		<title>Registro: Criptocash - Bienvenido</title>
+		<title>Registro: Criptocash | Bienvenido</title>
 		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="shortcut icon" href="images/icono_prueba1.png" />
+
 
 	</head>
 </html>
