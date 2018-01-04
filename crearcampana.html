@@ -9,10 +9,10 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 
-		<title>Menu Simple Corredizo</title>
+		<title>Crear Campaña | CriptoCash</title>
 
 		<!-- Bootstrap Core CSS -->
-		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 		<!-- Custom CSS -->
 		<link href="css/sidebarDeslizable.css?version=1.0.5" rel="stylesheet">
@@ -20,13 +20,34 @@
 		<link href="css/estilosElementosv3.css?version=3.0" rel="stylesheet">
 		<link rel="stylesheet" href="css/colorsmaterial.css">
 		<link rel="stylesheet" href="css/icofont.css"> <!-- iconos extraidos de: http://icofont.com/-->
-		<link rel="shortcut icon" href="images/peto.png" />
+		<link rel="shortcut icon" href="images/icono_prueba1.png" />
+		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+		<link rel="stylesheet" href="css/estilostop.css?version=1.0.1">
+		<link rel="stylesheet" href="css/estiloscampana.css?version=1.0">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 		
 </head>
 
 <body>
+	<style type="text/css">
+    .panel-default.panel-heading { border-color:transparent!important; }
+    .panel-heading {    border-top-left-radius: 17px;
+                border-top-right-radius: 17px;
+}
+    .panel   {border-radius: 8px;}
+    .panel-panel.default {padding-left: 0px;}
+    .navbar{ min-height: 90px;  }
+    a:focus, a:hover {text-decoration: none; }
+    	.form-control:focus {
+    	border-color: #FFEB3B;
+    	box-shadow: inset 0 1px 1px rgba(245, 208, 27, 0.26), 0 0 6px rgba(255, 193, 7, 0.41);
+    	transition: all 0.8s;
+	}
+	
 
-<div id="wrapper">
+  </style>
+
+<div id="wrapper" class="noselect">
 
 	<!-- Sidebar -->
 	<div id="sidebar-wrapper">
@@ -75,8 +96,8 @@
 	<div class="container-fluid">
 		<nav class="navbar navbar-fixed-top encoger">
 			<div class="container">
-				<div class="navbar-header ">
-				<a class="navbar-brand ocultar-mostrar-menu" href="#"><img id="imgLogoInfocat" class="img-responsive" src="images/logo.png" alt=""></a>
+				<div class="navbar-header" style="padding-top: 15px; padding-left: 3px;">
+				<a class="navbar-brand ocultar-mostrar-menu" href="#"><img id="imgLogoInfocat" class="img-responsive" src="images/cripto.png" alt=""></a>
 					<button type="button" class="navbar-toggle collapsed" id="btnColapsador" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -100,9 +121,20 @@
 								<span class="form-control-clear glyphicon glyphicon-remove-circle form-control-feedback hidden"></span>
 							</div>
 						 </li>
-						 <li id="liDatosPersonales"><a href="#!" style="padding-top: 12px;"><p> <span id="icoUser"><i class="icofont icofont-ui-user"></i></span><span class="mayuscula" id="menuNombreUsuario">Pariona Valencia, Carlos Alex</span></p></a></li>
+					  <li id="liDatosPersonales" style="font-family: 'Poppins', sans-serif;">
+						 	<div class="dropdown">
+						 		  <a href="#!" style="padding-top: 12px;"><p style="height: 35px";> <span id="icoUser"><i class="icofont icofont-ui-user"></i></span><span class="mayuscula" id="menuNombreUsuario">Pariona Valencia, Carlos Alex</span></p></a>
+								  <div class="dropdown-content">
+								    <a href="configuracion4.html" class="elemento"><span><i class="glyphicon glyphicon-user" id="icono"></i></span>Perfil</a>
+								    <a href="#" class="elemento"><span><i class="glyphicon glyphicon-tag" id="icono"></i></span>Notificaciones</a>
+								    <a href="#" class="elemento"><span><i class="glyphicon glyphicon-cog" id="icono"></i></span>Configuración</a>
+								    <hr style=" margin-top: 5px; margin-bottom: 5px;">
+								    <a href="php/desconectar.php" class="elemento"><span><i class="glyphicon glyphicon-off" id="icono"></i></span>Cerrar Sesión</a>
+								  </div>
+								</div>
+						 </li>
 							
-		<li class="text-center"><a href="php/desconectar.php"><span class="visible-xs">Cerrar Sesión</span><i class="icofont icofont-ui-power"></i></a></li>
+		
 					</ul>
 						
 				</div>
@@ -114,17 +146,16 @@
 <div id="page-content-wrapper">
 	<div class="container-fluid">				 
 			<div class="row">
-				<div class="col-lg-12 contenedorDeslizable fondoGeo">
-				<!-- Empieza a meter contenido principal dentro de estas etiquetas -->
+			
 	
 				
 					<div id="campaña">	
 		<div class="container" id="divmedio">
         <div class="row centered-form"  >
         <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-3 ">
-        	<div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05); height: 50em; width: 40em;">
-        		<div class="panel-heading" style="background:#fff; padding-top: 60px"">
-			    		<h3 id="title" class="panel-title text-center" style="font-size:38px ; padding-top: 5px; color: #808080">Crear campaña</h3>
+        	<div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05);  width: 40em;">
+        		<div class="panel-heading" style="background:#fff; padding-top: 30px"">
+			    		<h3 id="title" class="panel-title text-center" style="font-size:30px ; padding-top: 2px; color: #808080">Crear campaña</h3>
 			    </div>
 
 			 			<div class="panel-body col-sm-offset-1 col-md-offset-0 col-xs-offset-1 " >
@@ -132,10 +163,10 @@
 
 			    			<div class="form-inline col-md-offset-1">
 			    				
-			    				<label  class="col-xs" for="Precio"><h3 id="" class="" style="font-size:20px ; padding-top: 5px; color: #808080"><span class="glyphicon glyphicon-tag	Try it"></span> Precio:</h3></label>
-			    				<input type="" style="height: 45px; width: 100px;" name="precio" id="txtPrecioProducto" class="form-control input-sm " placeholder="Precio">
-			    					<div style="display: inline-block;">
-			    						<label for="radio1" class="radio-inline	">
+			    				<label  class="col-xs" for="Precio"><h3 id="" class="control-label" style="font-size:18px ; padding-top: 5px; color: #333"><i class="fa fa-usd" aria-hidden="true"></i> Precio:</h3></label>
+			    				<input type="" style="height: 30px; width: 115px;" name="precio" id="txtPrecioProducto" class="form-control input-sm" >
+			    					<div style="display: inline-block;" class="col-md-offset-3">
+			    						<label for="radio1" class="radio-inline">
 			    							<input type="radio" name="Opcion" id="rd_Soles">Soles
 			    						</label>
 			    						<label for="radio2" class="radio-inline">
@@ -145,14 +176,14 @@
 
 			    			</div>
 			    			<div class="form-group col-md-offset-1">
-			    				<label class="col-xs" for=""><h3 id="" class="" style="font-size:20px ; padding-top: 5px; color: #808080"><span class="glyphicon glyphicon-pencil	Try it"></span> Descripción del producto:</h3></label>
+			    				<label class="col-xs" for=""><h3 id="" class="" style="font-size:18px ; padding-top: 5px; color: #333"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Descripción del producto:</h3></label>
 			    				<input type="producto" style="height: 45px; width: 415px;" name="descripcion_producto" id="txtdescripcion_producto" class="form-control input-sm " placeholder="Escriba una breve descripción">
 			    			</div>
 			    			
 				    			<form acrtion="" class="">
 				    				<div class="col-md-offset-1">
 				    				
-				    				<h3 id="" class="" style="font-size:20px ; padding-top: 5px; color: #808080"> <span class="glyphicon glyphicon-resize-small	Try it" ></span> Tamaño del botón:</h3>
+				    				<h3 id="" class="" style="font-size:18px ; padding-top: 5px; color: #333"> <i class="fa fa-arrows-alt" aria-hidden="true"></i> Tamaño del botón:</h3>
 										
 					    				<button id="btn_t97x31" style="height: 35px; width:90px;" value="Continuar" class="btn btn-classic col-md-offset-1">97x31 px</button>
 
@@ -161,7 +192,7 @@
 						    			<button id="btn_t166x58" style="height: 35px; width:90px;" value="Continuar" class="btn btn-classic col-md-offset-1">166x58 px</button>
 						    			
 					    			
-					    			<h3 id="" class="" style="font-size:20px ; padding-top: 5px; color: #808080"><span class="glyphicon glyphicon-qrcode"></span> Codigo generado:</h3>
+					    			<h3 id="" class="" style="font-size:18px ; padding-top: 5px; color: #333"><i class="fa fa-qrcode" aria-hidden="true"></i> Codigo generado:</h3>
 				    				<textarea style="height: 45px; width: 415px; name="Codigo_generado" id="txtCodigoGnerado" class="form-control" placeholder=""></textarea>
 					    					
 				    			</div>
@@ -169,13 +200,8 @@
 
 			    			<hr>
 			    			
-			    			<div>
-						    						    			
-					    			<input type="submit" id="btnguardarcampaña" style="height: 45px; width:415px;" value="Guardar" class="btn btn-primary btn-block col-md-offset-1">
-
-					    			<!-- <div style="padding-top: 30px;">
-					    				<h5 class="text-center">¿Ya tiene una cuenta? <a href="login.html">Iniciar Sesión</a></h5>
-					    			</div> -->
+			    			<div class="col-md-offset-9 col-sm-offset-7">			    			
+					    			<button id="btnguardarcamapana" class="btn btn-azul btn-outline"><i class="fa fa-check" aria-hidden="true"></i> Guardar</button>
 			    			</div>
 			    		</div>
 	    	</div>
@@ -184,7 +210,7 @@
     </div>
     </div>
 				<!-- Fin de contenido principal -->
-				</div>
+				
 		</div>
 </div>
 <!-- /#page-content-wrapper -->
