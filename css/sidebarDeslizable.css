@@ -3,7 +3,7 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-@import url('https://fonts.googleapis.com/css?family=Muli');
+
 
 
  body {
@@ -81,17 +81,18 @@
 
 .sidebar-nav li a:hover {
 	text-decoration: none;
-	color: #fff;
+	color: #246ED1;
 	/*background: rgba(255,255,255,0.2);*/
-	border-bottom: solid #F7FDCA  3px;
-	padding: 0 10px;  margin-left: 25px;
-	margin-right: 30px;
+	border-bottom: solid #1963c5 2px;
+	/* padding: 0 10px;
+	margin-left: 25px;
+	margin-right: 30px; */
 }
 
 .sidebar-nav .active{
-	background: rgba(39,43,59,1); 
+	background: #ebefff; 
 }
-.sidebar-nav .active a{color:rgb(255,193,74);}
+.sidebar-nav .active a{color:#0a5fe2;}
 
 .sidebar-nav > .sidebar-brand { margin-top: 20px; margin-bottom: 20px;
 	
@@ -166,3 +167,8 @@ li a i {font-size:24px; padding-right:10px}
 	background-color: #1c1a1a;
 }
 #icoUser i{ font-size: 18px;}
+
+#sidebar-wrapper li ul{
+	list-style-type: none!important;
+}
+.arrowAbajo{display: inline-block;}
