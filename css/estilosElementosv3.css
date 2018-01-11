@@ -113,3 +113,6 @@ h2{margin-top: 0px; } .breadcrumb{margin-bottom: 10px; }
 .modal-content{box-shadow: 0 0px 15px rgba(255, 255, 255, 0.65);}
 .modal-title >i{color: rgba(255, 255, 255, 0.67);}
 .close{opacity: 0.5; color: #fff;}
+.btn-sinBorde {
+    border-color: transparent!important;
+}

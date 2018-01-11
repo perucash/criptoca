@@ -15,8 +15,8 @@
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 		<!-- Custom CSS -->
-		<link href="css/sidebarDeslizable.css?version=1.0.5" rel="stylesheet">
-		<link rel="stylesheet" href="css/cssBarraTop.css?version=1.0.3">
+		<link href="css/sidebarDeslizable.css?version=1.0.14" rel="stylesheet">
+		<link rel="stylesheet" href="css/cssBarraTop.css?version=1.0.4">
 		<link href="css/estilosElementosv3.css?version=3.0" rel="stylesheet">
 		<link rel="stylesheet" href="css/colorsmaterial.css">
 		<link rel="stylesheet" href="css/icofont.css"> <!-- iconos extraidos de: http://icofont.com/-->
@@ -54,34 +54,34 @@
 		<ul class="sidebar-nav">
 			
 			<div class="logoEmpresa ocultar-mostrar-menu">
-				<img class="img-responsive" src="images/empresa.png?version=1.1" alt="">
+				<img class="img-responsive" src="images/logoCritpoVectorColor.svg?version=1.2" alt="">
 			</div>
 			<li >
 					<a href="#!"><i class="icofont icofont-home"></i> Dashboard</a>
 
 			</li>
 			<li>
-					<a href="#!"><i class="icofont icofont-cube"></i> Metodos de pago</a>
-						<ul>
-							<LI class="active"><a href="#!"><i class="icofont icofont-home"></i> Crear botones</a></LI>
+					<a href="#!" class="contLi"><i class="icofont icofont-cube"></i> Métodos de pago <div class="arrowAbajo pull-right"><i class="icofont icofont-rounded-down"></i></div></a>
+						<ul class="hidden">
+							<LI class="active"><a href="crearcampana.html#!"><i class="icofont icofont-hammer-alt"></i> Crear botones</a></LI>
 
-							<LI><a href="#!"><i class="icofont icofont-home"></i> Listar botones</a></LI>
+							<LI><a href="listar_boton.html#!"><i class="icofont icofont-listing-box"></i> Listar botones</a></LI>
 						</ul>
 			</li>
 			<li>
-					<a href="#!"><i class="icofont icofont-shopping-cart"></i> Depositos</a>
-						<ul>
-							<LI><a href="#!"><i class="icofont icofont-home"></i> Ver transacciones</a></LI>
-							<LI><a href="#!"><i class="icofont icofont-home"></i> Solicitar pagos</a></LI>
-							<LI><a href="#!"><i class="icofont icofont-home"></i> Reportes de pagos pago</a></LI>
+					<a href="#!" class="contLi"><i class="icofont icofont-shopping-cart"></i> Depósitos <div class="arrowAbajo pull-right"><i class="icofont icofont-rounded-down"></i></div></a>
+						<ul class="hidden">
+							<LI><a href="ver_transaccion.html#!"><i class="icofont icofont-document-search"></i> Ver transacciones</a></LI>
+							<LI><a href="solicitar_pago.html#!"><i class="icofont icofont-notebook"></i>Solicitar pagos</a></LI>
+							<LI><a href="#!"><i class="icofont icofont-home"></i> Reportes de pagos</a></LI>
 
 						</ul>
 			</li>
 			<li>
-					<a href="#!"><i class="icofont icofont-users"></i> Configuraciones</a>
-						<ul>
-							<LI><a href="#!"><i class="icofont icofont-home"></i> Datos del contacto</a></LI>
-							<LI><a href="#!"><i class="icofont icofont-home"></i> Datos del comercio</a></LI>
+					<a href="#!" class="contLi"><i class="icofont icofont-users"></i> Configuraciones <div class="arrowAbajo pull-right"><i class="icofont icofont-rounded-down"></i></div></a>
+						<ul class="hidden">
+							<LI><a href="configuracion4.html#!"><i class="icofont icofont-user-search"></i> Datos del contacto</a></LI>
+							<LI><a href="configuracion4.html#!"><i class="icofont icofont-home"></i> Datos del comercio</a></LI>
 							
 
 						</ul>
@@ -96,8 +96,8 @@
 	<div class="container-fluid">
 		<nav class="navbar navbar-fixed-top encoger">
 			<div class="container">
-				<div class="navbar-header" style="padding-top: 15px; padding-left: 3px;">
-				<a class="navbar-brand ocultar-mostrar-menu" href="#"><img id="imgLogoInfocat" class="img-responsive" src="images/cripto.png" alt=""></a>
+				<div class="navbar-header" style="padding-top: 24px; padding-left: 3px;">
+				<a class="navbar-brand ocultar-mostrar-menu" href="#"><img id="imgLogoInfocat" class="img-responsive" src="images/logoCritpoVector.svg" alt=""></a>
 					<button type="button" class="navbar-toggle collapsed" id="btnColapsador" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
@@ -149,56 +149,55 @@
 					<div id="campaña">	
 		<div class="container" id="divmedio">
         <div class="row centered-form"  >
-        <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-3 ">
-        	<div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05);  width: 40em;     padding: 10px;">
+        <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 ">
+        	<div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05); padding: 10px;">
         		<div class="panel-heading" style="background:#fff; padding-top: 30px"">
 			    		<h3 id="title" class="panel-title text-center" style="font-size:30px ; padding-top: 2px; color: #808080">Crear campaña</h3>
 			    </div>
 
-			 			<div class="panel-body col-sm-offset-1 col-md-offset-0 col-xs-offset-1 " >
+			 			<div class="panel-body col-sm-offset-1 col-md-offset-0 col-xs-offset-1">
 			    		
 
-			    			<div class="form-inline col-md-offset-1">
+			    			<div class="form-inline col-md-offset-1 form-group">
 			    				
-			    				<label  class="col-xs" for="Precio"><h3 id="" class="control-label" style="font-size:18px ; padding-top: 5px; color: #333"><i class="fa fa-usd" aria-hidden="true"></i> Precio:</h3></label>
-			    				<input type="" style="height: 45px; width: 115px;" name="precio" id="txtPrecioProducto" class="form-control input-sm" >
-			    					<div style="display: inline-block;" class="col-md-offset-0">
+			    				<label id="" class="control-label" style="font-size:18px ; padding-top: 5px; color: #333"><i class="fa fa-usd" aria-hidden="true"></i> Precio:</label>
+			    				<input type="" style="height: 45px; " name="precio" id="txtPrecioProducto" class="form-control input-sm" placeholder="0.00" >
+			    					<div style="display: inline-block";>
 			    							<div class="form-group" style="width: 200px";> 
 							              		<div class="radio col-md-6 col-sm-5">
 							              			<label><input type="radio" name="optradio" id="rd_tarjeta"> Soles</label>
 							              		</div>
-							              		<div class="radio col-md-5 col-sm-3">
+							              		<div class="radio col-md-5 col-sm-5">
 							              		<label><input type="radio" name="optradio" id="rd_bitcoin"> USD</label></div>
 						              		</div>
 			    					</div>
 
 			    			</div>
 			    			<div class="form-group col-md-offset-1">
-			    				<label class="col-xs" for=""><h3 id="" class="" style="font-size:18px ; padding-top: 5px; color: #333"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Descripción del producto:</h3></label>
-			    				<input type="producto" style="height: 45px; width: 415px;" name="descripcion_producto" id="txtdescripcion_producto" class="form-control input-sm " placeholder="Escriba una breve descripción">
+			    				<label id="" class="" style="font-size:18px ; padding-top: 5px; color: #333"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Descripción del producto:</label>
+			    				<input style="height: 45px;" name="descripcion_producto" id="txtdescripcion_producto" class="form-control input-sm" placeholder="Escriba una breve descripción">
 			    			</div>
-			    			
-				    			<form acrtion="" class="">
-				    				<div class="col-md-offset-1">
+				    		<div class="col-md-offset-1 form-group">
 				    				
-				    				<h3 id="" class="" style="font-size:18px ; padding-top: 5px; color: #333"> <i class="fa fa-expand" aria-hidden="true"></i> Tamaño del botón:</h3>
+				    				<label id="" class="" style="font-size:18px ; padding-top: 5px; color: #333"> <i class="fa fa-expand" aria-hidden="true"></i> Tamaño del botón:</label>
+				    				<br/>
 										
 					    				<button id="btn_t97x31" style="height: 35px; width:90px;" value="Continuar" class="btn btn-classic col-md-offset-1">97x31 px</button>
 
 						    			<button id="btn_t129x45" style="height: 35px; width:90px;" value="Continuar" class="btn btn-classic col-md-offset-1">129x45 px</button>
 
 						    			<button id="btn_t166x58" style="height: 35px; width:90px;" value="Continuar" class="btn btn-classic col-md-offset-1">166x58 px</button>
-						    			
-					    			
-					    			<h3 id="" class="" style="font-size:18px ; padding-top: 5px; color: #333"><i class="fa fa-qrcode" aria-hidden="true"></i> Codigo generado:</h3>
-				    				<textarea style="height: 45px; width: 415px; name="Codigo_generado" id="txtCodigoGnerado" class="form-control" placeholder=""></textarea>
-					    					
-				    			</div>
+						    </div>			
+					    	<div class="col-md-offset-1 form-group">
+					    			<label id="" class="" style="font-size:18px ; padding-top: 5px; color: #333"><i class="fa fa-qrcode" aria-hidden="true"></i> Codigo generado:</label>
+				    				<textarea style="height: 45px; name="Codigo_generado" id="txtCodigoGnerado" class="form-control" placeholder=""></textarea>
+				    		</div>
+					    		
 				    			</form>
 
 			    			<hr>
 			    			
-			    			<div class="col-md-offset-9 col-sm-offset-7">			    			
+			    			<div class="col-md-offset-9 col-sm-offset-7 col-xs-offset-7">			    			
 					    			<button id="btnguardarcamapana" class="btn btn-azul btn-outline"><i class="fa fa-check" aria-hidden="true"></i> Guardar</button>
 			    			</div>
 			    		</div>
@@ -234,6 +233,18 @@ $(document).ready(function(){
 });
 $('#btnBienvenido').click(function () {
 	$('.modal-Bienvenido').modal('show');
+});
+$("#btnguardarcamapana").click(function () {
+		console.log("click en el btnguardarcamapana");
+		window.location.href="index.html"
+	});
+	$('.contLi').click(function () {
+	$(this).next().toggleClass('hidden');
+	if($(this).next().hasClass('hidden')){
+	$(this).find('.arrowAbajo').html('<i class="icofont icofont-rounded-down"></i>');
+	}else{
+	$(this).find('.arrowAbajo').html('<i class="icofont icofont-rounded-up"></i>');
+	}
 });
 </script>
 
