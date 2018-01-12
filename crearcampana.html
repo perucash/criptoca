@@ -57,7 +57,7 @@
 				<img class="img-responsive" src="images/logoCritpoVectorColor.svg?version=1.2" alt="">
 			</div>
 			<li >
-					<a href="#!"><i class="icofont icofont-home"></i> Dashboard</a>
+					<a href="#!"><i class="icofont icofont-dashboard"></i> Dashboard</a>
 
 			</li>
 			<li>
@@ -69,7 +69,7 @@
 						</ul>
 			</li>
 			<li>
-					<a href="#!" class="contLi"><i class="icofont icofont-shopping-cart"></i> Depósitos <div class="arrowAbajo pull-right"><i class="icofont icofont-rounded-down"></i></div></a>
+					<a href="#!" class="contLi"><i class="icofont icofont-box"></i> Depósitos <div class="arrowAbajo pull-right"><i class="icofont icofont-rounded-down"></i></div></a>
 						<ul class="hidden">
 							<LI><a href="ver_transaccion.html#!"><i class="icofont icofont-document-search"></i> Ver transacciones</a></LI>
 							<LI><a href="solicitar_pago.html#!"><i class="icofont icofont-notebook"></i>Solicitar pagos</a></LI>
@@ -78,10 +78,10 @@
 						</ul>
 			</li>
 			<li>
-					<a href="#!" class="contLi"><i class="icofont icofont-users"></i> Configuraciones <div class="arrowAbajo pull-right"><i class="icofont icofont-rounded-down"></i></div></a>
+					<a href="#!" class="contLi"><i class="icofont icofont-gears"></i> Configuraciones <div class="arrowAbajo pull-right"><i class="icofont icofont-rounded-down"></i></div></a>
 						<ul class="hidden">
-							<LI><a href="configuracion4.html#!"><i class="icofont icofont-user-search"></i> Datos del contacto</a></LI>
-							<LI><a href="configuracion4.html#!"><i class="icofont icofont-home"></i> Datos del comercio</a></LI>
+							<LI><a href="configuracion.html#!"><i class="icofont icofont-user-search"></i> Datos del contacto</a></LI>
+							<LI><a href="configuracion.html#!"><i class="icofont icofont-home"></i> Datos del comercio</a></LI>
 							
 
 						</ul>
@@ -98,38 +98,22 @@
 			<div class="container">
 				<div class="navbar-header" style="padding-top: 24px; padding-left: 3px;">
 				<a class="navbar-brand ocultar-mostrar-menu" href="#"><img id="imgLogoInfocat" class="img-responsive" src="images/logoCritpoVector.svg" alt=""></a>
-					<button type="button" class="navbar-toggle collapsed" id="btnColapsador" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</button>
+					<button type="button" class="navbar-toggle collapsed" id="btnColapsador" >
+					
+					
 				</div>
 				<div id="navbar" class="navbar-collapse collapse ">
-					<ul class="nav navbar-nav">
-						<li class="hidden down"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HR <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-										<li><a href="#">Change Time Entry</a></li>
-										<li><a href="#">Report</a></li>
-								</ul>
-							</li>
-					</ul>
+					 			
 					<ul class="nav navbar-nav pull-right">
-						 <li>
-							<div class="btn-group has-clear hidden"><label for="txtBuscarNivelGod" class="text-muted visible-xs">Buscar algo:</label>
-								<input type="text" class="form-control" id="txtBuscarNivelGod" placeholder="&#xeded;">
-								<span class="form-control-clear glyphicon glyphicon-remove-circle form-control-feedback hidden"></span>
-							</div>
-						 </li>
 					  <li id="liDatosPersonales" style="font-family: 'Poppins', sans-serif;">
 						 	<div class="dropdown">
-						 		  <a href="#!" style="padding-top: 12px;"><p style="height: 35px";> <span id="icoUser"><i class="icofont icofont-ui-user"></i></span><span class="mayuscula" id="menuNombreUsuario">Pariona Valencia, Carlos Alex</span></p></a>
+						 		  <a href="#!" style="padding-top:12px;"><p style="height: 35px";> <span id="icoUser"><i class="icofont icofont-ui-user"></i></span><span class="mayuscula" id="menuNombreUsuario"> Pariona Valencia, Carlos Alex</span></p></a>
 								  <div class="dropdown-content">
-								    <a href="configuracion4.html" class="elemento"><i class="fa fa-user" aria-hidden="true"></i>Perfil</a>
-								    <a href="#" class="elemento"><i class="fa fa-bell" aria-hidden="true"></i>Notificaciones</a>
-								    <a href="#" class="elemento"><i class="fa fa-cog" aria-hidden="true"></i>Configuración</a>
+								    <a href="configuracion4.html" class="elemento"><i class="fa fa-user" aria-hidden="true"></i> Perfil</a>
+								    <a href="#" class="elemento"><i class="fa fa-bell" aria-hidden="true"></i> Notificaciones</a>
+								    <a href="#" class="elemento"><i class="fa fa-cog" aria-hidden="true"></i> Configuración</a>
 								    <hr style=" margin-top: 5px; margin-bottom: 5px;">
-								    <a href="php/desconectar.php" class="elemento"><i class="fa fa-power-off" aria-hidden="true"></i>Cerrar Sesión</a>
+								    <a href="php/desconectar.php" class="elemento"><i class="fa fa-power-off" aria-hidden="true"></i> Cerrar Sesión</a>
 								  </div>
 								</div>
 						 </li>
@@ -137,7 +121,7 @@
 		
 					</ul>
 						
-				</div>
+				<!-- </div> -->
 		</div>
 		</nav>
 	</div>
@@ -152,7 +136,7 @@
         <div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 ">
         	<div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05); padding: 10px;">
         		<div class="panel-heading" style="background:#fff; padding-top: 30px"">
-			    		<h3 id="title" class="panel-title text-center" style="font-size:30px ; padding-top: 2px; color: #808080">Crear campaña</h3>
+			    		<h3 id="title" class="panel-title" style="font-size:30px ; padding-top: 2px; color: #808080">Crear campaña</h3>
 			    </div>
 
 			 			<div class="panel-body col-sm-offset-1 col-md-offset-0 col-xs-offset-1">
@@ -160,7 +144,7 @@
 
 			    			<div class="form-inline col-md-offset-1 form-group">
 			    				
-			    				<label id="" class="control-label" style="font-size:18px ; padding-top: 5px; color: #333"><i class="fa fa-usd" aria-hidden="true"></i> Precio:</label>
+			    				<label id="" class="control-label" style="font-size:15px ; padding-top: 5px; color: #333"><i class="fa fa-usd" aria-hidden="true"></i> Precio:</label>
 			    				<input type="" style="height: 45px; " name="precio" id="txtPrecioProducto" class="form-control input-sm" placeholder="0.00" >
 			    					<div style="display: inline-block";>
 			    							<div class="form-group" style="width: 200px";> 
@@ -174,22 +158,22 @@
 
 			    			</div>
 			    			<div class="form-group col-md-offset-1">
-			    				<label id="" class="" style="font-size:18px ; padding-top: 5px; color: #333"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Descripción del producto:</label>
+			    				<label id="" class="" style="font-size:15px ; padding-top: 5px; color: #333"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Descripción del producto:</label>
 			    				<input style="height: 45px;" name="descripcion_producto" id="txtdescripcion_producto" class="form-control input-sm" placeholder="Escriba una breve descripción">
 			    			</div>
 				    		<div class="col-md-offset-1 form-group">
 				    				
-				    				<label id="" class="" style="font-size:18px ; padding-top: 5px; color: #333"> <i class="fa fa-expand" aria-hidden="true"></i> Tamaño del botón:</label>
+				    				<label id="" class="" style="font-size:15px ; padding-top: 5px; color: #333"> <i class="fa fa-expand" aria-hidden="true"></i> Tamaño del botón:</label>
 				    				<br/>
 										
 					    				<button id="btn_t97x31" style="height: 35px; width:90px;" value="Continuar" class="btn btn-classic col-md-offset-1">97x31 px</button>
 
 						    			<button id="btn_t129x45" style="height: 35px; width:90px;" value="Continuar" class="btn btn-classic col-md-offset-1">129x45 px</button>
 
-						    			<button id="btn_t166x58" style="height: 35px; width:90px;" value="Continuar" class="btn btn-classic col-md-offset-1">166x58 px</button>
+						    			<button id="btn_t166x58" style="height: 35px; width:90px;" value="Continuar" class="btn btn-classic col-md-offset-1 ">166x58 px</button>
 						    </div>			
 					    	<div class="col-md-offset-1 form-group">
-					    			<label id="" class="" style="font-size:18px ; padding-top: 5px; color: #333"><i class="fa fa-qrcode" aria-hidden="true"></i> Codigo generado:</label>
+					    			<label id="" class="" style="font-size:15px ; padding-top: 5px; color: #333"><i class="fa fa-qrcode" aria-hidden="true"></i> Codigo generado:</label>
 				    				<textarea style="height: 45px; name="Codigo_generado" id="txtCodigoGnerado" class="form-control" placeholder=""></textarea>
 				    		</div>
 					    		
