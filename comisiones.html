@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>Listar Campaña | CriptoCash</title>
+
+		<!-- Bootstrap Core CSS -->	
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Custom CSS -->
+		<link href="css/sidebarDeslizable.css?version=1.0.14" rel="stylesheet">
+		<link rel="stylesheet" href="css/cssBarraTop.css?version=1.0.4">
+		<link href="css/estilosElementosv3.css?version=3.0" rel="stylesheet">
+		<link rel="stylesheet" href="css/colorsmaterial.css">
+		<link rel="stylesheet" href="css/icofont.css"> <!-- iconos extraidos de: http://icofont.com/-->
+		<link rel="shortcut icon" href="images/icono_prueba1.png" />
+		<link rel="stylesheet" href="css/estilostop.css?version=1.0.1">
+   	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    	<link rel="stylesheet" href="css/estiloscampana.css?version=1.0">
+    	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    	<link rel="stylesheet" href="css/font-awesome.min.css">
+    	
+</head>
+
+<body>
+	<style type="text/css">
+    .panel-default.panel-heading { border-color:transparent!important; }
+    .panel-heading {    border-top-left-radius: 17px;
+                border-top-right-radius: 17px;
+}
+    .panel   {border-radius: 8px;}
+    .panel-panel.default {padding-left: 0px;}
+    .navbar {min-height: 90px;}
+    a:focus, a:hover {text-decoration: none; }
+  
+
+  </style>
+
+<div id="wrapper" class="noselect">
+
+	<!-- Sidebar -->
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav">
+			
+			<div class="logoEmpresa ocultar-mostrar-menu">
+				<img class="img-responsive" src="images/logoCritpoVectorColor.svg?version=1.2" alt="">
+			</div>
+			<li >
+					<a href="#!"><i class="icofont icofont-dashboard"></i>Dashboard</a>
+
+			</li>
+			<li>
+					<a href="#!" class="contLi"><i class="icofont icofont-cube"></i> Comisiones <div class="arrowAbajo pull-right"><i class="icofont icofont-rounded-down"></i></div></a>
+						
+			</li>
+			<li>
+					<a href="#" class="contLi"><i class="icofont icofont-box"></i> Crear Usuarios<div class="arrowAbajo pull-right"><i class="icofont icofont-rounded-down"></i></div></a>
+						
+			</li>
+			<li>
+					<a href="#!" class="contLi"><i class="icofont icofont-gears"></i> Bono <div class="arrowAbajo pull-right"><i class="icofont icofont-rounded-down"></i></div></a>
+						
+			</li>
+			<li>
+					<a href="#!" class="ocultar-mostrar-menu"><i class="icofont icofont-swoosh-left"></i> Ocultar menú</a>
+			</li>
+		</ul>
+	</div>
+			<!-- /#sidebar-wrapper -->
+<div class="navbar-wrapper">
+	<div class="container-fluid">
+		<nav class="navbar navbar-fixed-top encoger">
+			<div class="container">
+				<div class="navbar-header" style="padding-top: 24px; padding-left: 3px;">
+				<a class="navbar-brand ocultar-mostrar-menu" href="#"><img id="imgLogoInfocat" class="img-responsive" src="images/logoCritpoVector.svg" alt=""></a>
+					<button type="button" class="navbar-toggle collapsed" id="btnColapsador" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse ">
+					<ul class="nav navbar-nav">
+						<li class="hidden down"><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HR <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+										<li><a href="#">Change Time Entry</a></li>
+										<li><a href="#">Report</a></li>
+								</ul>
+							</li>
+					</ul>
+					<ul class="nav navbar-nav pull-right">
+						 <li>
+							<div class="btn-group has-clear hidden"><label for="txtBuscarNivelGod" class="text-muted visible-xs">Buscar algo:</label>
+								<input type="text" class="form-control" id="txtBuscarNivelGod" placeholder="&#xeded;">
+								<span class="form-control-clear glyphicon glyphicon-remove-circle form-control-feedback hidden"></span>
+							</div>
+						 </li>
+						 <li id="liDatosPersonales" style="font-family: 'Poppins', sans-serif;">
+						 	<div class="dropdown">
+						 		  <a href="#!" style="padding-top: 12px;"><p style="height: 35px";> <span id="icoUser"><i class="icofont icofont-ui-user"></i></span><span class="mayuscula" id="menuNombreUsuario">Pariona Valencia, Carlos Alex</span></p></a>
+								  <div class="dropdown-content">
+								    <a href="configuracion4.html" class="elemento"><i class="fa fa-user" aria-hidden="true"></i>Perfil</a>
+								    <a href="#" class="elemento"><i class="fa fa-bell" aria-hidden="true"></i>Notificaciones</a>
+								    <a href="#" class="elemento"><i class="fa fa-cog" aria-hidden="true"></i>Configuración</a>
+								    <hr style=" margin-top: 5px; margin-bottom: 5px;">
+								    <a href="php/desconectar.php" class="elemento"><i class="fa fa-power-off" aria-hidden="true"></i>Cerrar Sesión</a>
+								  </div>
+								</div>
+						 </li>
+				</div>
+		</div>
+		</nav>
+	</div>
+</div>
+<!-- Page Content -->
+<div id="page-content-wrapper">
+	<div class="container-fluid">				 
+			<div class="row">
+				  <div id="cuerpo"> 
+    <div class="container" id="divmedio">
+        <div class="row centered-form" >
+        <div class="col-xs-12 col-sm-12 col-md-12 col-sm-offset-0 col-md-offset-0 ">
+          <div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05);padding: 20px;">
+              <div class="panel-heading" style="background:#fff; padding-top: 20px"">
+                	<h3 id="title" class="panel-title text-left" style="font-size:30px ; padding-top: 5px; color: #808080; padding-bottom: 18px;";>Comisiones</h3>
+               </div>
+               <div class="form-group col-md-offset-3" style="padding-top: 15px">
+	               <h5 class="col-md-2 col-sm-3" style="padding: 0!important">Nueva Comisión</h5>
+	               <div class="col-md-3 col-sm-4">
+	               		<input type="number" class="form-control"  id="txtcomision" placeholder="Nueva Comisión">
+	               </div>
+	               <button class="btn btn-azul btn-outline">Cambiar</button>
+		       </div>
+		       	<div class="form-group col-md-offset-4" style="padding-left: 40px;">
+		       		<label >Comisión Actual: </label>
+		       		<label> 0.000485$</label>
+		       	</div>
+		       	<br/>
+		      
+             <h4 class="col-md-offset-1">Historial de comisiones</h4>  
+             <div class="table-responsive">
+             	<hr>
+              <table id="mytable" class="table table-bordred table-hover">
+                   
+                  <thead>
+                   
+	                   <th>Administrador</th>
+	                   <th>Cambio</th>
+	                   <th>Fecha Cambio</th>
+                  </thead>
+				  <tbody>
+					    
+					<tr>
+					    <td>Mohsin</td>
+					    <td>+0.005</td>
+					    <td>15/01/2018</td>
+					</tr>
+					    
+					 <tr>
+					    <td>Mohsin</td>
+					    <td>-0.07</td>
+					    <td>14/01/2018</td>
+					 <tr>
+					    <td>Mohsin</td>
+					    <td>+0.07</td>
+					    <td>13/01/2018</td>
+					</tr>
+					    
+					    
+					    
+					 <tr>
+					    <td>Mohsin</td>
+					    <td>+0.06</td>
+					    <td>12/01/2018</td>
+					</tr>
+					    
+					    
+					 <tr>
+					    <td>Mohsin</td>
+					    <td>-0.05</td>
+					    <td>11/01/2018</td>
+					</tr>
+					    </tbody>
+				</table> 
+				</div> 
+           </div>
+          </div>
+          </div>
+        </div>
+        </div>
+	</div>
+</div>
+
+<!-- /#page-content-wrapper -->
+</div><!-- /#wrapper -->
+
+<!-- Modal para decir Bienvenido  -->
+
+</div>
+
+	
+<!-- jQuery -->
+<script src="js/jquery-2.2.4.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/inicializacion.js?version=1.0.1"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+
+$(document).ready(function(){
+});
+$('#btnBienvenido').click(function () {
+	$('.modal-Bienvenido').modal('show');
+});
+	$("#btnayudalista").click(function () {
+		console.log("click en el btnayudalista");
+		window.location.href="index.html"
+	});
+	$('.contLi').click(function () {
+	$(this).next().toggleClass('hidden');
+	if($(this).next().hasClass('hidden')){
+	$(this).find('.arrowAbajo').html('<i class="icofont icofont-rounded-down"></i>');
+	}else{
+	$(this).find('.arrowAbajo').html('<i class="icofont icofont-rounded-up"></i>');
+	}
+});
+
+  </script>
+</body>
+
+</html>
