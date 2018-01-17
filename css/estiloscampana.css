@@ -23,3 +23,31 @@ font-size: 15px!important;
 html{
 	font-family: 'Poppins', sans-serif;
 }
+.up{
+	color:#148A12!important;
+	padding: 0!important
+}
+.down{
+	color:#E60505!important;
+	padding: 0!important
+}
+.celda{
+	width: 30em;
+}
+
+.panel-default.panel-heading {
+ border-color:transparent!important; }
+
+.panel-heading {    border-top-left-radius: 17px;
+               		 border-top-right-radius: 17px;
+}
+.panel   {
+	border-radius: 8px;}
+
+.panel-panel.default {
+	padding-left: 0px;}
+
+.navbar{ 
+	min-height: 90px;  }
+
+a:focus, a:hover {text-decoration: none; }

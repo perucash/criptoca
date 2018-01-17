@@ -50,3 +50,13 @@ a:focus, a:hover {
     
 }
 a:focus, a:hover {text-decoration: none; }
+
+.bordertop{
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.borderbot{
+border-bottom-left-radius:5px; 
+border-bottom-right-radius:5px;
+}
+.
