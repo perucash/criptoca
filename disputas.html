@@ -9,7 +9,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 
-		<title>Solicitar Pago | CriptoCash</title>
+		<title>Disputas | CriptoCash</title>
 
 		<!-- Bootstrap Core CSS -->
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -54,13 +54,13 @@
 					<a class="contLi" href="#!"><i class="icofont icofont-box"></i> Depósitos <div class="arrowAbajo pull-right"><i class="icofont icofont-rounded-down"></i></div></a>
 						<ul class="hidden">
 							<LI><a href="ver_transaccion.html#!"><i class="icofont icofont-document-search"></i> Ver transacciones</a></LI>
-							<LI class="active"><a href="solicitar_pago.html#!"><i class="icofont icofont-notebook"></i> Solicitar pagos</a></LI>
+							<LI><a href="solicitar_pago.html#!"><i class="icofont icofont-notebook"></i> Solicitar pagos</a></LI>
 							<LI><a href="#!"><i class="icofont icofont-home"></i> Reportes de pagos</a></LI>
 
 						</ul>
 			</li>
 			<li>
-					<a href="disputas.html" class="contLi"><i class="icofont icofont-support"></i> Disputas</a>
+					<a href="disputas.html" class="contLi active"><i class="icofont icofont-support"></i> Disputas</a>
 					
 			</li>
 			<li>
@@ -136,91 +136,15 @@
           <div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05); padding: 20px;">
               <div class="panel-heading" style="background:#fff; padding-top: 15px"">
                 <label id="title" class="panel-title text-left" style="color: #808080; padding-bottom: 18px">
-                <h2>Solicitar Pago</h2></label>
-               </div> 
-     		<div class="container">
-    			<div class="row">
-						      <div class="col-md-12 personal-info">
-						        
-						        <h3 >Saldo Disponible</h3>
-						        
-						        <form class="form-horizontal" role="form">
-						          <div class="form-group">
-						            <label class="col-md-2 col-sm-2 control-label form-group" style="color: #0479c1"><h2 class="control-label">1000.00$</h2></label>
-						            <div class="col-lg-5 col-md-offset-2 col-sm-offset-4 ">
-						            	<div style="margin-top: -30px">	
-						            		<label>Cantidad que deseo cobrar</label>
-						              		<input class="form-control col-md-4 " type="text" id="txtcantidadacobrar" placeholder="Cantidad">
-						              	</div>
-						              	<label style="padding-top: 30px">Forma de pago</label>
-						              	<div>
-						              		<div class="radio col-md-5 col-sm-5">
-						              			<label><input type="radio" name="optradio" id="rd_tarjeta">Tarjeta de Credito</label>
-						              		</div>
-						              		<div class="radio col-md-3 col-sm-3">
-						              		<label><input type="radio" name="optradio" id="rd_bitcoin">Bitcoin</label></div>
-						              	</div>
-						            </div>
-						          </div>
-						        </form>
-						      </div>
-						  </div>
-						</div>
-				<hr>
-					<div class="container">
-    				 <div class="row">
-					     <div class="col-md-12 personal-info">
-						        
-						        <h3>Tarjeta Crédito</h3>
-						        
-						        <form class="form-horizontal" role="form">
-						          <div class="form-group">
-						            <label class="col-lg-3 control-label">Nombre del titular:</label>
-						            <div class="col-lg-8 col-sm-11">
-						              <input class="form-control" id="txtnombretitular" type="text" placeholder="Ingresa Nombre">
-						            </div>
-						          </div>
-						          <div class="form-group">
-						            <label class="col-lg-3 control-label">Nombre de cuenta bancaria:</label>
-						            <div class="col-lg-8 col-sm-11">
-						              <input class="form-control" id="txtcuentabancaria" type="text" placeholder="Ingresa Cuenta">
-						            </div>
-						          </div>
-						          <div class="form-group">
-						            <label class="col-md-3 control-label"></label>
-						            <div class="col-md-offset-9 col-sm-offset-9 col-xs-offset-7">
-						              <button id="btnenviarcuenta" class="btn btn-azul btn-outline"><i class="fa fa-check" aria-hidden="true"></i> Enviar</button>
-						            </div>
-						          </div>
-						        </form>
-						    </div>
-						</div>
-					</div> 
-				<hr>
-							<div class="container">
-    						<div class="row">
-								 <div class="col-md-12 personal-info">
-						        
-						        <h3>Bitcoin</h3>
-						        
-						        <form class="form-horizontal" role="form">
-						          <div class="form-group">
-						            <label class="col-lg-3 control-label">Dirección Bitcoin:</label>
-						            <div class="col-lg-8 col-sm-11">
-						              <input class="form-control" id="txtdireccionbitcoin" type="text" placeholder="Ingresa Dirección">
-						            </div>
-						          </div>
-						          <div class="form-group">
-						            <label class="col-md-3 control-label"></label>
-						            <div class="col-md-offset-9 col-sm-offset-9 col-xs-offset-7">
-						              <button id="btnenviarbitcoin" class="btn btn-azul btn-outline"><i class="fa fa-check" aria-hidden="true"></i> Enviar</button>
-						            </div>
-						          </div>
-						        </form>
-						   </div>    
-						   </div>
-						   </div> 
-                </div>
+                <h2>Disputas</h2></label>
+               </div>
+
+               <div class="panel-body" style="background: #EEF1F2; margin-top: 20px; border-radius: 7px;     border: 1px solid #CBCDD3; ">	
+               	<div class="text-center" style="padding-top: 40px; padding-bottom: 30px">
+               		<i class="icofont icofont-cur-dong " style="font-size: 60px"></i>
+               		<strong><h3> Sin Disputas</h3></strong>
+               		<strong><h4>Todavía no existen disputas por revisar</h4></strong>
+               	</div>
           </div>
           </div>
         </div>
