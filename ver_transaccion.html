@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="css/colorsmaterial.css">
 		<link rel="stylesheet" href="css/icofont.css"> <!-- iconos extraidos de: http://icofont.com/-->
 		<link rel="shortcut icon" href="images/icono_prueba1.png" />
-		<link rel="stylesheet" href="css/estilostop.css?version=1.0.2">
+		<link rel="stylesheet" href="css/estilostop.css?version=1.0.3">
     	<link rel="stylesheet" href="css/estiloscampana.css?version=1.2">
     	<link rel="stylesheet" href="css/font-awesome.min.css">
     	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -112,14 +112,14 @@
 								<span class="form-control-clear glyphicon glyphicon-remove-circle form-control-feedback hidden"></span>
 							</div>
 						 </li>
-						 <li id="liDatosPersonales" style="font-family: 'Poppins', sans-serif;">
+						 <li id="liDatosPersonales">
 						 		<div class="dropdown">
 						 		  <a href="#!" style="padding-top: 12px;"><p style="height: 35px";> <span id="icoUser"><i class="icofont icofont-ui-user"></i></span><span class="mayuscula" id="menuNombreUsuario">Pariona Valencia, Carlos Alex</span></p></a>
 								  <div class="dropdown-content">
 								    <a href="configuracion4.html" class="elemento bordertop"><i class="fa fa-user" aria-hidden="true"></i>Perfil</a>
 								    <a href="#" class="elemento"><i class="fa fa-bell" aria-hidden="true"></i>Notificaciones</a>
 								    <a href="#" class="elemento"><i class="fa fa-cog" aria-hidden="true"></i>Configuración</a>
-								    <hr style=" margin-top: 5px; margin-bottom: 5px;">
+								    <hr class="hrmargin">
 								    <a href="php/desconectar.php" class="elemento borderbot"><i class="fa fa-power-off" aria-hidden="true"></i>Cerrar Sesión</a>
 								  </div>
 								</div>
@@ -139,9 +139,9 @@
     <div class="container" id="divmedio">
         <div class="row centered-form" >
         <div class="col-xs-12 col-sm-12 col-md-12 col-sm-offset-0 col-md-offset-0 ">
-          <div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05); padding: 20px;">
-              <div class="panel-heading" style="background:#fff; padding-top: 20px"">
-                <h3 id="title" class="panel-title text-left" style="font-size:30px ; padding-top: 5px; color: #808080; padding-bottom: 18px;">Ver Transacciones</h3>
+          <div class="panel panel-default">
+              <div class="panel-heading" style="background:#fff; padding-top: 15px">
+                <label id="title" class="panel-title text-left" style="color: #808080;"><h2>Ver Transacciones</h2></label>
                </div>
                <div class="table-responsive"> 
                	 <table id="mytable" class="table table-bordred table-hover">

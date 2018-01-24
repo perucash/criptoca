@@ -86,7 +86,7 @@
 	<div class="container-fluid">
 		<nav class="navbar navbar-fixed-top encoger">
 			<div class="container">
-				<div class="navbar-header" style="padding-top: 24px; padding-left: 3px;">
+				<div class="navbar-header" style="padding-top: 24px; padding-left: 3px;" > 
 				<a class="navbar-brand ocultar-mostrar-menu" href="#"><img id="imgLogoInfocat" class="img-responsive" src="images/logoCritpoVector.svg" alt=""></a>
 					<button type="button" class="navbar-toggle collapsed" id="btnColapsador" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 					<span class="sr-only">Toggle navigation</span>
@@ -105,14 +105,14 @@
 							</li>
 					</ul>
 					<ul class="nav navbar-nav pull-right">
-						 <li id="liDatosPersonales" style="font-family: 'Poppins', sans-serif;">
+						 <li id="liDatosPersonales">
 						 	<div class="dropdown">
 						 		  <a href="#!" style="padding-top: 12px;"><p style="height: 35px";> <span id="icoUser"><i class="icofont icofont-ui-user"></i></span><span class="mayuscula" id="menuNombreUsuario">Pariona Valencia, Carlos Alex</span></p></a>
 								  <div class="dropdown-content">
 								    <a href="configuracion4.html" class="elemento bordertop"><i class="fa fa-user" aria-hidden="true"></i>Perfil</a>
 								    <a href="#" class="elemento"><i class="fa fa-bell" aria-hidden="true"></i>Notificaciones</a>
 								    <a href="#" class="elemento"><i class="fa fa-cog" aria-hidden="true"></i>Configuración</a>
-								    <hr style=" margin-top: 5px; margin-bottom: 5px;">
+								    <hr class="hrmargin">
 								    <a href="php/desconectar.php" class="elemento borderbot"><i class="fa fa-power-off" aria-hidden="true"></i>Cerrar Sesión</a>
 								  </div>
 								</div>
@@ -130,14 +130,15 @@
     <div class="container" id="divmedio">
         <div class="row centered-form" >
         <div class="col-xs-12 col-sm-12 col-md-12">
-          <div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05);padding: 20px;">
-             <div class="panel-heading form-inline" style="background:#fff; padding-top: 20px"">
-                <h3 id="title" class="panel-title text-left col-md-6" style="font-size:30px ; padding-top: 5px; color: #808080; padding-bottom: 18px;";>Dashboard</h3>
+          <div class="panel panel-default">
+             <div class="panel-heading" style="background:#fff; padding-top: 15px;">
+                <label id="title" class="panel-title text-left col-md-6" style="color: #808080;">
+                <h2>Dashboard</h2></label>
                 <div class="text-right" class="col-md-6">
                 	<input type="checkbox" data-toggle="toggle" data-on="S/" data-off="BTC" data-onstyle="danger">          
 				</div>
              </div>
-               <div class="panel panel-body">
+               <div class="panel-body">
                		<div class="col-md-offset-3 col-md-6 col-sm-12" style="border: 1px solid #CBCDD3; margin-bottom: 15px;">
                			<div class="col-md-4 form-group col-sm-4" style=" margin-top: 15px;">
                				<label style="font-size: 25px">S/ 0.00</label>

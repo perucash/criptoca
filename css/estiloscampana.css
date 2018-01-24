@@ -20,9 +20,7 @@ font-size: 15px!important;
 #icono{
 	font-size: 15px!important;
 }
-html{
-	font-family: 'Poppins', sans-serif;
-}
+
 .up{
 	color:#148A12!important;
 	padding: 0!important
@@ -38,11 +36,12 @@ html{
 .panel-default.panel-heading {
  border-color:transparent!important; }
 
-.panel-heading {    border-top-left-radius: 17px;
-               		 border-top-right-radius: 17px;
-}
+
 .panel   {
-	border-radius: 8px;}
+	border-radius: 5px;
+	padding: 20px;
+	box-shadow:0px 2px 20px 7px rgba(0,0,0,.05);
+	}
 
 .panel-panel.default {
 	padding-left: 0px;}

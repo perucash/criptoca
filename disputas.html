@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="css/colorsmaterial.css">
 		<link rel="stylesheet" href="css/icofont.css"> <!-- iconos extraidos de: http://icofont.com/-->
 		<link rel="shortcut icon" href="images/icono_prueba1.png" />
-   		<link rel="stylesheet" href="css/estilostop.css?version=1.0.2">
+   		<link rel="stylesheet" href="css/estilostop.css?version=1.0.3">
     	<link rel="stylesheet" href="css/estiloscampana.css?version=1.2">
     	<link rel="stylesheet" href="css/font-awesome.min.css">
     	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
@@ -107,14 +107,14 @@
 								<span class="form-control-clear glyphicon glyphicon-remove-circle form-control-feedback hidden"></span>
 							</div>
 						 </li>
-						 <li id="liDatosPersonales" style="font-family: 'Poppins', sans-serif;">
+						 <li id="liDatosPersonales">
 						 		<div class="dropdown">
 						 		  <a href="#!" style="padding-top: 12px;"><p style="height: 35px";> <span id="icoUser"><i class="icofont icofont-ui-user"></i></span><span class="mayuscula" id="menuNombreUsuario">Pariona Valencia, Carlos Alex</span></p></a>
 								  <div class="dropdown-content">
 								    <a href="configuracion4.html" class="elemento bordertop"><i class="fa fa-user" aria-hidden="true"></i>Perfil</a>
 								    <a href="#" class="elemento"><i class="fa fa-bell" aria-hidden="true"></i>Notificaciones</a>
 								    <a href="#" class="elemento"><i class="fa fa-cog" aria-hidden="true"></i>Configuración</a>
-								    <hr style=" margin-top: 5px; margin-bottom: 5px;">
+								    <hr class="hrmargin">
 								    <a href="php/desconectar.php" class="elemento borderbot"><i class="fa fa-power-off" aria-hidden="true"></i>Cerrar Sesión</a>
 								  </div>
 								</div>
@@ -133,19 +133,30 @@
     <div class="container" id="divmedio">
         <div class="row centered-form" >
         <div class="col-xs-12 col-sm-12 col-md-12 col-sm-offset-0 col-md-offset-0 ">
-          <div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05); padding: 20px;">
-              <div class="panel-heading" style="background:#fff; padding-top: 15px"">
-                <label id="title" class="panel-title text-left" style="color: #808080; padding-bottom: 18px">
+          <div class="panel panel-default">
+              <div class="panel-heading" style="background:#fff; padding-top: 15px;">
+                <label id="title" class="panel-title text-left" style="color: #808080;">
                 <h2>Disputas</h2></label>
                </div>
 
-               <div class="panel-body" style="background: #EEF1F2; margin-top: 20px; border-radius: 7px;     border: 1px solid #CBCDD3; ">	
-               	<div class="text-center" style="padding-top: 40px; padding-bottom: 30px">
-               		<i class="icofont icofont-cur-dong " style="font-size: 60px"></i>
-               		<strong><h3> Sin Disputas</h3></strong>
-               		<strong><h4>Todavía no existen disputas por revisar</h4></strong>
-               	</div>
-          </div>
+              	<div class="panel-body" style="background: #EEF1F2; margin-top: 20px; border-radius: 7px;     border: 1px solid #CBCDD3; ">	
+	               	<div class="text-center" style="padding-top: 40px; padding-bottom: 30px">
+	               		<i class="icofont icofont-cur-dong " style="font-size: 60px"></i>
+	               		<strong><h3> Sin Disputas</h3></strong>
+	               		<strong><h4>Todavía no existen disputas por revisar</h4></strong>
+	               	</div>	
+          		</div>
+          		<div style="background: #EEF1F2; margin-top: 20px; border-radius: 7px; border: 1px solid #CBCDD3;">
+          			<div class="col-md-offset-5">
+	          		  	<ul class="pagination">
+						  <li><a href="#">1</a></li>
+						  <li><a href="#">2</a></li>
+						  <li><a href="#">3</a></li>
+						  <li><a href="#">4</a></li>
+						  <li><a href="#">5</a></li>
+	 				  	</ul>
+	 				</div>
+          		</div>
           </div>
         </div>
         </div>
@@ -169,21 +180,7 @@
 <!-- Menu Toggle Script -->
 <script>
 
-$(document).ready(function(){
-});
-$('#btnBienvenido').click(function () {
-	$('.modal-Bienvenido').modal('show');
-});
 
-$("#btnneviarcuenta").click(function () {
-	console.log("click en el btnneviarcuenta");
-	window.location.href="index.html"
-});
-
-$("#btnenviarbitcoin").click(function () {
-	console.log("click en el btnenviarbitcoin");
-	window.location.href="index.html"
-});
 $('.contLi').click(function () {
 	$(this).next().toggleClass('hidden');
 	if($(this).next().hasClass('hidden')){
