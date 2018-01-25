@@ -5,15 +5,16 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/estilosp.css?version=1.0.1">
 		<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-		<script src='https://www.google.com/recaptcha/api.js'></script>
 		<title>Registro: Criptocash | Bienvenido</title>
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="shortcut icon" href="images/icono_prueba1.png" />
 
 
+
 	</head>
 </html>
 <body>
+
 <style type="text/css">
 	
 	.panel-body{padding-top: 0px;}
@@ -50,6 +51,7 @@
 				<div class="panel-heading" style="background:#fff; padding-top: 50px"">
 						<h3 id="title" class="panel-title text-center" style="padding-top: 5px; ">Bienvenido a Criptocash</h3>
 				</div>
+					<form action="">
 						<div class="panel-body" >
 							<div class="form-group ">
 								<span class="iconoMovible"><i class="fa fa-user" aria-hidden="true"></i></span>
@@ -87,6 +89,7 @@
 								</div>
 							</div>
 						</div>
+					</form>
 			</div>
 		</div>
 	</div>
@@ -95,7 +98,19 @@
 <script   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
-<script type="text/javascript">
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script>
+$(document).ready(function ()){
+     requiere_once 'php/vendor/app/init.php';
+
+     $response = $rescaptcha->verify($_POST['g-recaptcha-response']);
+
+     if($response->isSuccess()){
+      href="confirmar.html"
+     }else{
+      href="registro.php"
+     }
+}
 $(document).ready(function () {
 	$('#txtemail').focus();
 });
@@ -104,4 +119,5 @@ $("#btncontinuar").click(function () {
 	window.location.href="confirmar.html"
 });
 </script>
+
 </body>
