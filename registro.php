@@ -8,8 +8,7 @@
 		<title>Registro: Criptocash | Bienvenido</title>
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="shortcut icon" href="images/icono_prueba1.png" />
-
-
+		<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
 
 	</head>
 </html>
@@ -51,7 +50,7 @@
 				<div class="panel-heading" style="background:#fff; padding-top: 50px"">
 						<h3 id="title" class="panel-title text-center" style="padding-top: 5px; ">Bienvenido a Criptocash</h3>
 				</div>
-					<form action="">
+					<div>
 						<div class="panel-body" >
 							<div class="form-group ">
 								<span class="iconoMovible"><i class="fa fa-user" aria-hidden="true"></i></span>
@@ -69,27 +68,28 @@
 							</div>
 
 							<div class="col-xs-offset-1 col-md-offset-2" >
-								<div class="g-recaptcha" style="padding-top: 20px;" data-sitekey="6LcD8jwUAAAAAOyLgujlyxs9jGpczeONwQl0gk8X"></div>
+								<div class="g-recaptcha" id="recaptcha" style="padding-top: 20px;" data-sitekey="6LcD8jwUAAAAAOyLgujlyxs9jGpczeONwQl0gk8X"></div>
 							</div>	
 
 								<hr>
 
 							<div>
-								<label class="c-checkbox col-xs-offset-2" style="padding-bottom: 15px;">
-									 <input type="checkbox" id="chkterminos" />
-									 <span class="text" style="font-size: 11px;">
-										He leído y acepto los <a href="">Términos y condiciones</a>
-									</span>
-								</label>
-
-								<input type="submit" id="btncontinuar" style="height: 45px; width:80%; margin:0 auto; " value="Continuar" class="btn btn-primary btn-block col-md-offset-1">
+								<div class="checkbox checkbox-danger">
+									<input id="chkReglas" class="styled" type="checkbox" value=1>
+									<label for="chkReglas">
+											<small>Acepto que toda la información proporcionada.</small>
+									</label>
+								</div>
+							</div>
+								<div class="form-group text-center text-danger hidden" id="divError">Error en alguno de los datos, complételos todos cuidadosamente.</div>
+								<input  id="btncontinuar" style="height: 45px; width:80%; margin:0 auto; " value="Continuar" class="btn btn-primary btn-block col-md-offset-1">
 
 								<div style="padding-top: 30px;">
 									<h5 class="text-center">¿Ya posee una cuenta? <a href="login.html">Inicie sesión aquí</a></h5>
 								</div>
 							</div>
 						</div>
-					</form>
+					</div>
 			</div>
 		</div>
 	</div>
@@ -98,26 +98,59 @@
 <script   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src='https://www.google.com/recaptcha/api.js'></script>
 <script>
-$(document).ready(function ()){
-     requiere_once 'php/vendor/app/init.php';
+$('#btncontinuar').click(function (event ) {
+		var $captcha = $( '#recaptcha' ),
+      response = grecaptcha.getResponse();
+  
 
-     $response = $rescaptcha->verify($_POST['g-recaptcha-response']);
 
-     if($response->isSuccess()){
-      href="confirmar.html"
-     }else{
-      href="registro.php"
-     }
-}
+
+		$('#btncontinuar').find('.icono').addClass('sr-only');
+		$('#btncontinuar').find('.fa-spin').removeClass('sr-only');
+
+		if($('#txtemail').val()=='' || $('#txtpassword').val()=='' || $('#txtrepetir_password').val()=='' ){$('#divError').text("No se admiten campos en blanco").removeClass('hidden');
+			$('#btncontinuar').find('.icono').removeClass('sr-only');
+			$('#btncontinuar').find('.fa-spin').addClass('sr-only');}
+		else if (response.length === 0) {
+			$('#divError').text('La captcha es obligatoria para acceder').removeClass('hidden');
+			$('#btncontinuar').find('.icono').removeClass('sr-only');
+			$('#btncontinuar').find('.fa-spin').addClass('sr-only');
+		}/* else {
+		    $( '.msg-error' ).text('');
+		    $captcha.removeClass( "error" );
+		    alert( 'reCAPTCHA marked' );
+		  }*/
+		else if (!($('#chkReglas:checked').val()=='')){console.log('no acepto los términos'); $('.modal-faltaCompletar').modal('show'); $('#lblFalta').text('Falta aceptar el contrato');}
+		else{ console.log("Accedio");
+			$.ajax({url: 'php/validarSesion.php', type: 'POST', data: {
+			user: $('#txtemail').val(),
+			pws: $('#txtpassword').val(),
+			offi: $('#office').val(),
+			modalidad: $('#cmbMod').val()
+			 
+
+			}}).done(function (resp) {
+				
+			console.log(resp);
+			if(resp==''){
+				$('#divError').text('Usuario o contraseña es incorrecto').removeClass('hidden');
+				$('#btncontinuar').find('.icono').removeClass('sr-only');
+				$('#btncontinuar').find('.fa-spin').addClass('sr-only');
+			}
+			if(resp=='Welcome guy!'){window.location.href = 'aplicativo.php'}
+		}).error(function (err) {console.log(err);
+			// body...
+		});
+		}
+	});
+
 $(document).ready(function () {
 	$('#txtemail').focus();
 });
-$("#btncontinuar").click(function () {
-	console.log("click en el btn");
-	window.location.href="confirmar.html"
-});
+
 </script>
 
 </body>
