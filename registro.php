@@ -47,7 +47,7 @@
 		<div class="row centered-form"  >
 		<div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-3 ">
 			<div class="panel panel-default" style="box-shadow: 0px 2px 12px 7px rgba(0,0,0,.05); height: 45em; width: 35em;">
-				<div class="panel-heading" style="background:#fff; padding-top: 50px"">
+				<div class="panel-heading" style="background:#fff; padding-top: 50px">
 						<h3 id="title" class="panel-title text-center" style="padding-top: 5px; ">Bienvenido a Criptocash</h3>
 				</div>
 					<div>
@@ -74,7 +74,7 @@
 								<hr>
 
 							<div>
-								<div class="checkbox checkbox-danger">
+								<div class="checkbox checkbox-default">
 									<input id="chkReglas" class="styled" type="checkbox" value=1>
 									<label for="chkReglas">
 											<small>Acepto que toda la información proporcionada.</small>
@@ -82,7 +82,7 @@
 								</div>
 							</div>
 								<div class="form-group text-center text-danger hidden" id="divError">Error en alguno de los datos, complételos todos cuidadosamente.</div>
-								<input  id="btncontinuar" style="height: 45px; width:80%; margin:0 auto; " value="Continuar" class="btn btn-primary btn-block col-md-offset-1">
+								<button  id="btncontinuar" style="height: 45px; width:80%; margin:0 auto; "  class="btn btn-primary btn-block col-md-offset-1">Contiunar</button>
 
 								<div style="padding-top: 30px;">
 									<h5 class="text-center">¿Ya posee una cuenta? <a href="login.html">Inicie sesión aquí</a></h5>
@@ -94,7 +94,6 @@
 		</div>
 	</div>
 	</div>
-	</div>
 <script   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
@@ -104,9 +103,6 @@
 $('#btncontinuar').click(function (event ) {
 		var $captcha = $( '#recaptcha' ),
       response = grecaptcha.getResponse();
-  
-
-
 
 		$('#btncontinuar').find('.icono').addClass('sr-only');
 		$('#btncontinuar').find('.fa-spin').removeClass('sr-only');
@@ -123,7 +119,7 @@ $('#btncontinuar').click(function (event ) {
 		    $captcha.removeClass( "error" );
 		    alert( 'reCAPTCHA marked' );
 		  }*/
-		else if (!($('#chkReglas:checked').val()=='')){console.log('no acepto los términos'); $('.modal-faltaCompletar').modal('show'); $('#lblFalta').text('Falta aceptar el contrato');}
+		else if (!($("input[type='checkbox']").is(':checked')===true)){console.log('no acepto los términos'); $('.modal-faltaCompletar').modal('show'); $('#lblFalta').text('Falta aceptar el contrato');}
 		else{ console.log("Accedio");
 			$.ajax({url: 'php/validarSesion.php', type: 'POST', data: {
 			user: $('#txtemail').val(),
@@ -146,10 +142,6 @@ $('#btncontinuar').click(function (event ) {
 		});
 		}
 	});
-
-$(document).ready(function () {
-	$('#txtemail').focus();
-});
 
 </script>
 
