@@ -1,7 +1,7 @@
 <?php  
 include('crearToken.php');
 
-$destino='infocat.servicios@gmail.com';
+$destino='goblue030796@gmail.com';
 $desde='From: Criptocash<info@criptocash.com>'."\r\n";
 $desde.='Content-type:text/html;charset=UTF-8';
 $asunto='Confirmación de correo';

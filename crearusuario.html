@@ -24,7 +24,7 @@
    	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     	<link rel="stylesheet" href="css/estiloscampana.css?version=1.2">
     	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    	<link rel="stylesheet" href="css/font-awesome.min.css">
+    	
     	
 </head>
 
@@ -77,14 +77,15 @@
 						 	<div class="dropdown">
 						 		  <a href="#!" style="padding-top: 12px;"><p style="height: 35px";> <span id="icoUser"><i class="icofont icofont-ui-user"></i></span><span class="mayuscula" id="menuNombreUsuario">Pariona Valencia, Carlos Alex</span></p></a>
 								  <div class="dropdown-content">
-								    <a href="configuracion4.html" class="elemento bordertop"><i class="fa fa-user" aria-hidden="true"></i>Perfil</a>
-								    <a href="#" class="elemento"><i class="fa fa-bell" aria-hidden="true"></i>Notificaciones</a>
-								    <a href="#" class="elemento"><i class="fa fa-cog" aria-hidden="true"></i>Configuración</a>
+								    <a href="configuracion.html" class="elemento bordertop"><i class="icofont icofont-user"></i>Perfil</a>
+								    <a href="#" class="elemento"><i class="icofont icofont-bell-alt"></i>Notificaciones</a>
+								    <a href="#" class="elemento"><i class="icofont icofont-gear"></i>Configuración</a>
 								    <hr style=" margin-top: 5px; margin-bottom: 5px;">
-								    <a href="php/desconectar.php" class="elemento borderbot"><i class="fa fa-power-off" aria-hidden="true"></i>Cerrar Sesión</a>
+								    <a href="php/desconectar.php" class="elemento borderbot"><i class="icofont icofont-sign-out"></i>Cerrar Sesión</a>
 								  </div>
-								</div>
+				            </div>
 						 </li>
+                    </ul>
 				</div>
 		</div>
 		</nav>
@@ -97,93 +98,95 @@
 				  <div id="cuerpo"> 
     <div class="container" id="divmedio">
         <div class="row centered-form" >
-        <div class="col-xs-12 col-sm-12 col-md-12 col-sm-offset-0 col-md-offset-0 ">
+        <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05);padding: 20px;">
-              <div class="panel-heading" style="background:#fff; padding-top: 20px"">
+              <div class="panel-heading" style="background:#fff; padding-top: 20px">
                 	<h3 id="title" class="panel-title text-left" style="font-size:30px ; padding-top: 5px; color: #808080; padding-bottom: 18px;";>Creación de usuarios</h3>
                </div>
-               <div class="form-group col-md-offset-3 col-sm-offset-2" style="padding-top: 15px">
-	               <h5 class="col-md-1 col-sm-2 col-xs-offset-1" style="padding: 0!important">Nombre: </h5>
-	               <div class="col-md-6 col-sm-6">
-	               		<input type="number" class="form-control"  id="txtcomision" placeholder="Nombre">
-	               </div>
-	    	    </div>
-	    	    <br/>
-		       	<div class="form-group col-md-offset-3 col-sm-offset-2" style="padding-top: 15px">
-	               <h5 class="col-md-1 col-sm-2 col-xs-offset-1" style="padding: 0!important">Apellido: </h5>
-	               <div class="col-md-6 col-sm-6">
-	               		<input type="number" class="form-control"  id="txtcomision" placeholder="Apellido">
-	               </div>
-		       </div>
-		       <br/>
-		       <div class="form-group col-md-offset-3 col-sm-offset-2" style="padding-top: 15px">
-	               <h5 class="col-md-1 col-sm-2 col-xs-offset-1" style="padding: 0!important">Rango: </h5>
-	               <div class="ui-select col-md-5 col-sm-6">
-				 		<select id="cmbPais" class="form-control">
-						  <option value="Administrador" selected="selected">Administrador</option>
-						  <option value="Cliente">Cliente</option>
-						  <option value="Usuario">Usuario</option>
-						</select>
-					</div>
-		       </div>
-		       	<br/>
-		    <br/>
-             <div class="table-responsive">
-           		<table id="mytable" class="table table-bordred table-hover">
-                   
-                  <thead>
-	                   <th>Administrador</th>
-	                   <th>Nombre</th>
-	                   <th>Apellido</th>
-	                   <th>Rango</th>
-	                   <th>Editar</th>
-	                   <th>Eliminar</th>
-                  </thead>
-				  <tbody>
-					<style></style>    
-					<tr>
-					    <td>Mohsin</td>
-					    <td>Somus</td>
-					    <td>Rot</td>
-					    <td>Administrador</td>
-					    <td><p data-placement="top" data-toggle="tooltip" title="Editar"><button class="btn btn-azul btn-outline btn-sinBorde" data-title="Editar" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil" aria-hidden="true"></i></button></p></td>
-					    <td><p data-placement="top" data-toggle="tooltip" title="Eliminar"><button class="btn btn-rojo btn-outline btn-sinBorde" data-title="Eliminar" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash-o" aria-hidden="true"></i></button></p></td>
-					</tr>
-					 <tr>
-					    <td>Mohsin</td>
-					    <td>Somus</td>
-					    <td>Rot</td>
-					    <td>Vistante</td>
-					    <td><p data-placement="top" data-toggle="tooltip" title="Editar"><button class="btn btn-azul btn-outline btn-sinBorde" data-title="Editar" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil" aria-hidden="true"></i></button></p></td>
-					    <td><p data-placement="top" data-toggle="tooltip" title="Eliminar"><button class="btn btn-rojo btn-outline btn-sinBorde" data-title="Eliminar" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash-o" aria-hidden="true"></i></button></p></td>
-					 <tr>
-					    <td>Rost</td>
-					    <td>Dish</td>
-					    <td>Remus</td>
-					    <td>Usuario</td>
-					    <td><p data-placement="top" data-toggle="tooltip" title="Editar"><button class="btn btn-azul btn-outline btn-sinBorde" data-title="Editar" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil" aria-hidden="true"></i></button></p></td>
-					    <td><p data-placement="top" data-toggle="tooltip" title="Eliminar"><button class="btn btn-rojo btn-outline btn-sinBorde" data-title="Eliminar" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash-o" aria-hidden="true"></i></button></p></td>
-					</tr>
-					 <tr>
-					    <td>Tier</td>
-					    <td>Ern</td>
-					    <td>Most</td>
-					    <td>Administrador</td>
-					    <td><p data-placement="top" data-toggle="tooltip" title="Editar"><button class="btn btn-azul btn-outline btn-sinBorde" data-title="Editar" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil" aria-hidden="true"></i></button></p></td>
-					    <td><p data-placement="top" data-toggle="tooltip" title="Eliminar"><button class="btn btn-rojo btn-outline btn-sinBorde" data-title="Eliminar" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash-o" aria-hidden="true"></i></button></p></td>
-					</tr>
-					 <tr>
-					    <td>Mohsin</td>
-					    <td>Tir</td>
-					    <td>Sox</td>
-					    <td>Visitante</td>
-					    <td><p data-placement="top" data-toggle="tooltip" title="Editar"><button class="btn btn-azul btn-outline btn-sinBorde" data-title="Editar" data-toggle="modal" data-target="#edit" ><i class="fa fa-pencil" aria-hidden="true"></i></button></p></td>
-					    <td><p data-placement="top" data-toggle="tooltip" title="Eliminar"><button class="btn btn-rojo btn-outline btn-sinBorde" data-title="Eliminar" data-toggle="modal" data-target="#delete" ><i class="fa fa-trash-o" aria-hidden="true"></i></button></p></td>
-					</tr>
-					    </tbody>
-				</table> 
-				</div> 
-           </div>
+              <div class="panel-body">
+                       <div class="form-group col-md-offset-3 col-md-9 col-sm-offset-2 " style="padding-top: 15px">
+                           <h5 class="col-md-1 col-sm-2 col-xs-offset-1" style="padding: 0!important">Nombre: </h5>
+                           <div class="col-md-6 col-sm-6">
+                                <input type="number" class="form-control"  id="txtcomision" placeholder="Nombre">
+                           </div>
+                        </div>
+                        <div class="form-group col-md-offset-3 col-md-9 col-sm-offset-2">
+                           <h5 class="col-md-1 col-sm-2 col-xs-offset-1" style="padding: 0!important">Apellido: </h5>
+                           <div class="col-md-6 col-sm-6">
+                                <input type="number" class="form-control"  id="txtcomision" placeholder="Apellido">
+                           </div>
+                       </div>
+                       <div class="form-group col-md-offset-3 col-md-9 col-sm-offset-2">
+                           <h5 class="col-md-1 col-sm-2 col-xs-offset-1" style="padding: 0!important">Rango: </h5>
+                           <div class="ui-select col-md-5 col-sm-6">
+                                <select id="cmbPais" class="form-control">
+                                  <option value="Administrador" selected="selected">Administrador</option>
+                                  <option value="Cliente">Cliente</option>
+                                  <option value="Usuario">Usuario</option>
+                                </select>
+                            </div>
+                       </div>
+                       <div class="col-md-offset-5 col-md-3 form-group">
+                            <button class="form-control btn btn-azul btn-outline">Aceptar</button>
+                        </div>
+                        
+                     <div class="table-responsive col-md-12">
+                        <table id="mytable" class="table table-bordred table-hover">
+
+                          <thead>
+                               <th>Administrador</th>
+                               <th>Nombre</th>
+                               <th>Apellido</th>
+                               <th>Rango</th>
+                               <th>Editar</th>
+                               <th>Eliminar</th>
+                          </thead>
+                          <tbody>
+                            <style></style>    
+                            <tr>
+                                <td>Mohsin</td>
+                                <td>Somus</td>
+                                <td>Rot</td>
+                                <td>Administrador</td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Editar"><button class="btn btn-azul btn-outline btn-sinBorde" data-title="Editar" data-toggle="modal" data-target="#edit" ><i class="icofont icofont-edit"></i></button></p></td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Eliminar"><button class="btn btn-rojo btn-outline btn-sinBorde" data-title="Eliminar" data-toggle="modal" data-target="#delete" ><i class="icofont icofont-ui-delete"></i></button></p></td>
+                            </tr>
+                             <tr>
+                                <td>Mohsin</td>
+                                <td>Somus</td>
+                                <td>Rot</td>
+                                <td>Vistante</td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Editar"><button class="btn btn-azul btn-outline btn-sinBorde" data-title="Editar" data-toggle="modal" data-target="#edit" ><i class="icofont icofont-edit"></i></button></p></td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Eliminar"><button class="btn btn-rojo btn-outline btn-sinBorde" data-title="Eliminar" data-toggle="modal" data-target="#delete" ><i class="icofont icofont-ui-delete"></i></button></p></td>
+                             <tr>
+                                <td>Rost</td>
+                                <td>Dish</td>
+                                <td>Remus</td>
+                                <td>Usuario</td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Editar"><button class="btn btn-azul btn-outline btn-sinBorde" data-title="Editar" data-toggle="modal" data-target="#edit" ><i class="icofont icofont-edit"></i></button></p></td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Eliminar"><button class="btn btn-rojo btn-outline btn-sinBorde" data-title="Eliminar" data-toggle="modal" data-target="#delete" ><i class="icofont icofont-ui-delete"></i></button></p></td>
+                            </tr>
+                             <tr>
+                                <td>Tier</td>
+                                <td>Ern</td>
+                                <td>Most</td>
+                                <td>Administrador</td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Editar"><button class="btn btn-azul btn-outline btn-sinBorde" data-title="Editar" data-toggle="modal" data-target="#edit" ><i class="icofont icofont-edit"></i></button></p></td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Eliminar"><button class="btn btn-rojo btn-outline btn-sinBorde" data-title="Eliminar" data-toggle="modal" data-target="#delete" ><i class="icofont icofont-ui-delete"></i></button></p></td>
+                            </tr>
+                             <tr>
+                                <td>Mohsin</td>
+                                <td>Tir</td>
+                                <td>Sox</td>
+                                <td>Visitante</td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Editar"><button class="btn btn-azul btn-outline btn-sinBorde" data-title="Editar" data-toggle="modal" data-target="#edit" ><i class="icofont icofont-edit"></i></button></p></td>
+                                <td><p data-placement="top" data-toggle="tooltip" title="Eliminar"><button class="btn btn-rojo btn-outline btn-sinBorde" data-title="Eliminar" data-toggle="modal" data-target="#delete" ><i class="icofont icofont-ui-delete"></i></button></p></td>
+                            </tr>
+                                </tbody>
+                        </table> 
+                        </div>
+                </div>
+           </div><!-- /#panel-default -->
           </div>
           </div>
         </div>

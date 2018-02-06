@@ -24,7 +24,7 @@
    	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     	<link rel="stylesheet" href="css/estiloscampana.css?version=1.2">
     	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    	<link rel="stylesheet" href="css/font-awesome.min.css">
+    	
     	
 </head>
 
@@ -77,14 +77,15 @@
 						 	<div class="dropdown">
 						 		  <a href="#!" style="padding-top: 12px;"><p style="height: 35px";> <span id="icoUser"><i class="icofont icofont-ui-user"></i></span><span class="mayuscula" id="menuNombreUsuario">Pariona Valencia, Carlos Alex</span></p></a>
 								  <div class="dropdown-content">
-								    <a href="configuracion4.html" class="elemento bordertop"><i class="fa fa-user" aria-hidden="true"></i>Perfil</a>
-								    <a href="#" class="elemento"><i class="fa fa-bell" aria-hidden="true"></i>Notificaciones</a>
-								    <a href="#" class="elemento"><i class="fa fa-cog" aria-hidden="true"></i>Configuración</a>
+								    <a href="configuracion.html" class="elemento bordertop"><i class="icofont icofont-user"></i>Perfil</a>
+								    <a href="#" class="elemento"><i class="icofont icofont-bell-alt"></i>Notificaciones</a>
+								    <a href="#" class="elemento"><i class="icofont icofont-gear"></i>Configuración</a>
 								    <hr style=" margin-top: 5px; margin-bottom: 5px;">
-								    <a href="php/desconectar.php" class="elemento borderbot"><i class="fa fa-power-off" aria-hidden="true"></i>Cerrar Sesión</a>
+								    <a href="php/desconectar.php" class="elemento borderbot"><i class="icofont icofont-sign-out"></i>Cerrar Sesión</a>
 								  </div>
 								</div>
 						 </li>
+                    </ul>
 				</div>
 		</div>
 		</nav>
@@ -97,25 +98,26 @@
 				  <div id="cuerpo"> 
     <div class="container" id="divmedio">
         <div class="row centered-form" >
-        <div class="col-xs-12 col-sm-12 col-md-12 col-sm-offset-0 col-md-offset-0 ">
+        <div class="col-xs-12 col-sm-12 col-md-12">
           <div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05);padding: 20px;">
-              <div class="panel-heading" style="background:#fff; padding-top: 20px"">
+              <div class="panel-heading" style="background:#fff; padding-top: 20px">
                 	<h3 id="title" class="panel-title text-left" style="font-size:30px ; padding-top: 5px; color: #808080; padding-bottom: 18px;";>Comisiones</h3>
                </div>
-               <div class="col-md-offset-4 col-sm-offset-4" style="padding-left: 40px; padding-top:15px;">
+              <div class="panel-body">
+               <div class="col-md-offset-4 col-md-8 col-sm-offset-4" style="padding-left: 40px; padding-top:15px;">
 		       		<label style="font-size: 15px">Comisión Actual: </label>
 		       		<label style="font-size: 15px"> 0.000485$</label>
 		       	</div>
-               <div class="form-group col-md-offset-3 col-sm-offset-2" style="padding-top: 15px">
+               <div class="form-group col-md-offset-3 col-md-9 col-sm-offset-2" style="padding-top: 15px">
 	               <h5 class="col-md-2 col-sm-3 col-xs-offset-1" style="padding: 0!important">Nueva Comisión</h5>
 	               <div class="col-md-3 col-sm-4 form-group">
 	               		<input type="number" class="form-control"  id="txtcomision" placeholder="Nueva Comisión">
 	               </div>
-	               <button id="btncambiar" class="btn btn-azul btn-outline col-sm-offset-5 col-xs-offset-7 col-md-offset-1">Cambiar</button>
+	               <button id="btncambiar" class="btn btn-azul btn-outline col-sm-offset-5 col-xs-12 col-md-2 col-md-offset-1">Cambiar</button>
 		       </div>
-		       <br/>
-             <h4 class="col-md-offset-1">Historial de comisiones</h4>  
-             <div class="table-responsive">
+		       
+             <h4 class="col-md-offset-1 col-md-11 col-xs-12">Historial de comisiones</h4>  
+             <div class="table-responsive col-md-12">
            		<table id="mytable" class="table table-bordred table-hover">
                    
                   <thead>
@@ -152,7 +154,8 @@
 					</tr>
 					    </tbody>
 				</table> 
-				</div> 
+				</div>
+            </div>
            </div>
           </div>
           </div>
