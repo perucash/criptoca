@@ -9,7 +9,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 
-		<title>Bono | CriptoCash</title>
+		<title>Mercado | CriptoCash</title>
 
 		<!-- Bootstrap Core CSS -->	
 		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -24,6 +24,7 @@
    	 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     	<link rel="stylesheet" href="css/estiloscampana.css?version=1.2">
     	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    	<link rel="stylesheet" href="css/estiloMercado.css?version=1.0.0">
     	
     	
 </head>
@@ -55,14 +56,15 @@
 					<a href="pagos.html" class="contLi"><i class="icofont icofont-money-bag"></i> Pagos</a>
 						
 			</li>
-			<li class="active">
+			<li >
 					<a href="bono.html" class="contLi"><i class="icofont icofont-cur-dollar-plus"></i> Bono</a>
 						
 			</li>
-			<li >
+			<li class="active">
 					<a href="mercado.html" class="contLi"><i class="icofont icofont-bank"></i> Mercado</a>
 						
 			</li>
+			
 			<li>
 					<a href="#!" class="ocultar-mostrar-menu"><i class="icofont icofont-swoosh-left"></i> Ocultar menú</a>
 			</li>
@@ -101,78 +103,60 @@
 </div>
 <!-- Page Content -->
 <div id="page-content-wrapper">
-    <div class="container" id="divmedio">
-        <div class="row centered-form" >
-        <div class="col-xs-12 col-sm-12 col-md-12">
-          <div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05);padding: 20px;">
-            
-              <div class="panel-heading" style="background:#fff; padding-top: 20px">
-                	<h3 id="title" class="panel-title text-left" style="font-size:30px ; padding-top: 5px; color: #808080; padding-bottom: 18px;";>Bono</h3>
-               </div>
-                <div class="panel-body">
-               <div class="col-md-offset-3 col-sm-offset-2 col-md-9 col-sm-12" style="padding-top: 15px">
-               		<div class="form-group form-inline col-md-12 col-sm-12">
-	              		<h5 class="col-md-2 col-sm-3" style="padding: 0!important">Nuevo Bono:</h5>
-	              		<div class="col-md-7">
-							<input type="number" class="form-control"  id="txtbono" placeholder="0.00">
-						</div>
+	<div class="container-fluid">
+		<div class="container" id="divmedio">
+        <div class="col-xs-12 col-sm-8 col-md-offset-3 col-md-6 col-sm-offset-2">
+        	<div class="panel panel-default" style=" box-shadow:0px 2px 20px 7px rgba(0,0,0,.05);       padding: 10px;">
+        		<div class="panel-heading" style="background:#fff; padding-top: 30px">
+			    		<h3 id="title" class="panel-title text-center" style="font-size:30px ; padding-top: 2px; color: #808080">ExChange</h3>
+			    </div>
+
+			 		<div class="panel-body">
+			    			<div class="col-md-offset-3 col-md-9 col-sm-offset-2 col-sm-10 col-xs-offset-1 col-xs-11" ">
+			    				 <button type="button" id="btncomprarbit" class="btn btn-azul btn-outline col-md-4 col-sm-4 col-xs-11">Comprar</button>
+   								 <button type="button" id="btnvenderbit" class="vender btn btn-azul btn-outline col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1 col-xs-11">Vender</button>
+			    			</div>
+			    		
+			    			<div class="form-group col-md-offset-2 col-sm-offset-1 col-sm-10 col-xs-12 col-md-10" >
+			    				<h4 id="aviso" style="padding-top: 5px; color: #333;">Nosotros te vendemos Bitcoin a: </h4>
+			    			</div>	
+			    			<div class=" col-md-offset-2 col-md-10 col-sm-offset-1 col-sm-11 col-xs-12">
+			    				<label class="col-md-2 col-sm-3 col-xs-6" style="color: #333">Monto: </label>
+			    					<div class="col-md-8 col-sm-8 ">
+			    						<input type="number"  id="inputcompra" class="form-control input-sm col-xs-6"  placeholder="0.00";>
+			    						<span class="dolar" style="position: absolute;
+												    top: 46.5%;
+												    right: 15%;
+												    font-size: 11px;
+												    font-weight: bold;
+												    color: hsla(0, 5%, 25%, 0.9);
+												    transform: translateY(-50%);">USD
+										</span>
+			    					</div>
+			    			</div>
+			    			<div class="col-md-offset-4 col-md-8 col-sm-offset-3 col-sm-9 col-xs-12" style="margin-bottom: 30px;">
+			    				<label style="margin-top: 20px;">Total (BTC): <b> ≈</b> <span id="montobit"></label></h5>	
+			    			</div>	
+			    			
+			    			<div class="col-md-offset-4 col-sm-offset-4">			    			
+					    			<button id="btncalcular" class="btn btn-azul btn-outline col-xs-12 col-sm-6 col-md-8"> Procesar Venta</button>
+					    			
+			    			</div>
 					</div>
-	               	<div class="col-md-12 col-sm-10 form-inline">
-	               		<h5 class="col-md-2 col-sm-3" style="padding: 0!important" >Descripción: </h5>
-	               		<textarea id="txtdescripcion" cols="35" rows="5" class="form-control col-md-7 col-sm-7"></textarea>
-	               		<button class="btn btn-azul btn-outline col-md-2 col-md-offset-1 col-sm-offset-3 col-sm-7 col-xs-12" style="margin-top: 15px;"><i class="icofont icofont-ui-check"></i> Guardar</button>
-	               	</div>
-		       </div>
-		      
-             <h4 class="col-md-offset-1 col-md-3 col-xs-11 col-sm-12">Lista de Bonos</h4>  
-             <div class="table-responsive col-md-12">
-           		<table id="mytable" class="table table-bordred table-hover">
-                   
-                  <thead>
-	                   <th>ID</th>
-	                   <th>Bono</th>
-	                   <th>Descripcion</th>
-                  </thead>
-				  <tbody>
-					<tr>
-					    <td>0001</td>
-					    <td>10 $</td>
-					    <td class="celda">Bono por ingreso</td>
-					</tr>
-					 <tr>
-					    <td>0002</td>
-					    <td>15 $</td>
-					    <td class="celda">Bono por 3 transaccionces en el mes</td>
-					 <tr>
-					    <td>0003</td>
-					    <td>20 $</td>
-					    <td class="celda">Bono por 5 transacciones en el mes</td>
-					</tr>
-					 <tr>
-					    <td>0004</td>
-					    <td>100$ </td>
-					    <td class="celda">Bono por 15 transacciones</td>
-					</tr>
-					 <tr>
-					    <td>0005</td>
-					    <td>5 $</td>
-					    <td class="celda">Bono invitación de un compañero</td>
-					</tr>
-					    </tbody>
-				</table> 
-				</div>
-            </div>
-           </div> <!--Final Panel default -->
-          </div>
-          </div>
-        </div>
+			</div>
+		</div>
+		</div>
+	</div>
 </div>
-<!--Final Page Content -->
-</div>
+
 
 	
 <!-- jQuery -->
-<script src="js/jquery-2.2.4.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous">
+</script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -180,7 +164,6 @@
 
 <!-- Menu Toggle Script -->
 <script>
-
 $(document).ready(function(){
 });
 $('#btnBienvenido').click(function () {
@@ -198,7 +181,20 @@ $('#btnBienvenido').click(function () {
 	// $(this).find('.arrowAbajo').html('<i class="icofont icofont-rounded-up"></i>');
 	// }
 });
-
+$(document).ready(function(){
+    $("#inputcompra").keyup(function(){
+    	var valor1=0;
+    	if( $("#inputcompra").val()==''){
+    		valor1=0;
+    	}else{
+    		valor1=parseFloat($('#inputcompra').val());
+    	}
+    	
+    	var variablebit = parseFloat(14290.40);
+    	var multip=parseFloat(valor1/variablebit).toFixed(7);
+        $("#montobit").text(multip);
+    });
+});	
   </script>
 </body>
 

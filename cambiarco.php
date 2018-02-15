@@ -25,7 +25,7 @@ $mensaje='
                 <tbody><tr bgcolor="#ffffff" >
                     <td style="padding-top:32px">
                     <span style="padding-top:16px;padding-bottom:16px;font-size:24px;color:#246ED1;font-family:Arial,Helvetica,sans-serif;font-weight:bold">
-                        Hola, Pepito:
+                        Estimado Usuario de Criptocas:
                     </span><br>
                     </td>
                 </tr>

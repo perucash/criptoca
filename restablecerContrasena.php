@@ -24,48 +24,38 @@ $mensaje='
 
                 <tbody><tr bgcolor="#ffffff" >
                     <td style="padding-top:32px">
-                    <span style="padding-top:16px;padding-bottom:16px;font-size:24px;color:#246ED1;font-family:Arial,Helvetica,sans-serif;font-weight:bold">
-                        Estimado Usuario de Criptocash:
+                    <span style="padding-top:16px;padding-bottom:16px;font-size:20px;color:#246ED1;font-family:Arial,Helvetica,sans-serif;font-weight:bold">
+                        Restablecer tu contraseña de Criptocash
                     </span><br>
                     </td>
                 </tr>
 
                 <tr>
                     <td style="padding-top:12px;padding-bottom:10px">
-                    <span style="font-size:12px;color:#212529;font-family:Arial,Helvetica,sans-serif;">
-                        <p style="font-size: 13px;font-weight:bold">Usted recibio una nueva transacción.<br> Su billetera a sido abonada S/. 3000.00 </p>  <span> Puede acceder a su historial de compras en línea en cualquier momento.</span>
+                    <span style="font-size:15px;color:#212529;font-family:Arial,Helvetica,sans-serif;">
+                        <span> Hemos recibido su solicitud para restablecer la contraseña de su cuenta Bitpay. Para continuar, siga el siguiente enlace.</span>
                     </span>
                     </td>
                 </tr>
 
-                <tr bgcolor="#E8E8E8">
-                    <td style="padding:20px;font-size:12px;line-height:17px;color:#212529;font-family:Arial,Helvetica,sans-serif">
-                        <table width="420" cellspacing="4">
-                            <tbody><tr><td width="200"><div align="right"><b>ID de pago:&nbsp;&nbsp;</b></div></td><td width="202">1422</td></tr>
-                            <tr><td width="200"><div align="right"><b>Pagador:&nbsp;&nbsp;</b></div></td><td width="202">Feederico</td></tr>
-                            <tr>
-                              <td width="200"><div align="right"><b>Correo Electronico:&nbsp;&nbsp;</b></div></td>
-                              <td width="202"><span >f15@outlook.com</span></td>
-                            </tr>
-                            <tr>
-                              <td width="200"><div align="right"><b>Monto:&nbsp;&nbsp;</b></div></td>
-                              <td width="202"><span>S/. 3000.00</span></td>
-                            </tr>
-                            <tr>
-                              <td width="200">&nbsp;</td>
-                              <td width="202">&nbsp;</td>
-                            </tr>
-                            <tr>
-                              <td width="200"><div align="right"><b>Fecha Confirmada&nbsp;&nbsp;</b></div></td>
-                              <td width="202">Lunes Enero 05 22:08:32 2018</td>
-                            </tr>
-                        </tbody></table>
-                    </td>
+                <tr>
+                     <td align="center">
+                        <table class="m_3776455216365057673m_-8437388677446195775emailButton" style="border-radius:3px;background-color:#246ED1"  cellspacing="0" cellpadding="0" border="0" align="center">
+                          <tbody><tr>
+                             <td style="text-align:center" valign="middle" align="center"><a href="https://criptocash.com/integracion/mailCorrecto.php?token='.urlencode($licencia).'" style="color:#ffffff;background:#0078D7;border-radius:4px;padding-left:20px;padding-right:20px;width:250px;display:block;font-size:18px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;font-family:helvetica,arial;"; >Cambiar Contraseña</a> </td>
+                               </tr>
+                         </tbody></table>
+                     </td>
                 </tr>
 
+                <tr>
+                     <td style="text-align:left;color:#777777;font-family:Arial,sans-serif;font-size:13px!important; padding-top: 15px;" align="center"> Si no solicitaste este mensaje, por favor , ignóralo.
+                     </td>
+                  </tr>
+                                    
 
                 <tr>
-                    <td style="font-size:12px;color:#6d7880;padding-top:16px;padding-bottom:60px">
+                    <td style="font-size:12px;color:#6d7880;padding-top:16px;padding-bottom:32px">
                          El equipo <span class="il">de</span> Criptocash<br>
                          <a style="color:#8f98a0" >https://help.criptocash.com</a><br>
                     </td>
